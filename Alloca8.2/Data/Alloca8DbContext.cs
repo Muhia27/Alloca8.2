@@ -1,9 +1,11 @@
 ﻿using Alloca8._2.Models.Entities;
+
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace Alloca8._2.Data
 {
-    public class Alloca8DbContext : DbContext
+    public class Alloca8DbContext : IdentityDbContext<Users,IdentityRole>,Guid>
     {
         public Alloca8DbContext(DbContextOptions options) : base(options)
         {
