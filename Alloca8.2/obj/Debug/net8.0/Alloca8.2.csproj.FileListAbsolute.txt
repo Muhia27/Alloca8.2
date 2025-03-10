@@ -170,3 +170,4 @@ C:\Users\pc\source\repos\Alloca8.2\Alloca8.2\obj\Debug\net8.0\refint\Alloca8.2.d
 C:\Users\pc\source\repos\Alloca8.2\Alloca8.2\obj\Debug\net8.0\Alloca8.2.pdb
 C:\Users\pc\source\repos\Alloca8.2\Alloca8.2\obj\Debug\net8.0\Alloca8.2.genruntimeconfig.cache
 C:\Users\pc\source\repos\Alloca8.2\Alloca8.2\obj\Debug\net8.0\ref\Alloca8.2.dll
+C:\Users\pc\source\repos\Alloca8.2\Alloca8.2\obj\Debug\net8.0\Alloca8.2.sourcelink.json

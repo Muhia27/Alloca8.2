@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Alloca8.2.props" />
+</Project>
