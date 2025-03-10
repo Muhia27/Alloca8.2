@@ -1,0 +1,6 @@
+@Alloca8._2_HostAddress = http://localhost:5056
+
+GET {{Alloca8._2_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
