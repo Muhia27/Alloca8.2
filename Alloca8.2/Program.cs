@@ -5,6 +5,9 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Alloca8._2.Models.Entities;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Hosting;
+
+
 
 var builder = WebApplication.CreateBuilder(args);
 

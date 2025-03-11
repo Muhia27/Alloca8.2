@@ -8,9 +8,9 @@ namespace Alloca8._2.Models.Entities
 {
     public enum UserRole
     {
-        customer,
-        HotelOwner,
-        Admin
+        customer=1,
+        HotelOwner=2,
+        Admin=3,
     }
     public class Users : IdentityUser<Guid>
     {
