@@ -1,0 +1,54 @@
+﻿body {
+    font-family:sans-serif;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    margin:0;
+
+}
+.container {
+    text-align:center;
+}
+
+.border-Container{
+    border:1px solid #ddd;
+    padding: 20px;
+    width:300px;
+    margin: 20px auto;
+    border-radius:50px;
+
+}
+.radio-group {
+    margin-bottom:25px;
+    border:1px solid #eee;
+    padding:15px;
+    border-radius:15px;
+    text-align:center;
+}
+.radio-group label {
+    display:flex;
+    align-items:center;
+    cursor:pointer;
+}
+.radio-group label input [type="radio"]{
+    margin-right:10px;
+}
+
+#Signup-button {
+    display:block;
+    width : 100%;
+    padding:10px;
+    background-color:blue;
+    color:aliceblue;
+    border: none;
+    border-radius:5px;
+    font-size:16px;
+    cursor:pointer;
+}
+#Signup-button:hover {
+    background-color:#185abc;
+}
+h1{
+    margin-bottom:30px;
+}

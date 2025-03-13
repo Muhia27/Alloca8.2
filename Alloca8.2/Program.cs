@@ -7,20 +7,28 @@ using Alloca8._2.Models.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Hosting;
 
-
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<Alloca8DbContext>(options => options.UseSqlServer(
-    builder.Configuration.GetConnectionString("Alloca8DbConnectionString")
-    ));
+// Add CORS policy
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+    policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyMethod()
+              .AllowAnyHeader();
+    });
+});
+
+builder.Services.AddDbContext<Alloca8DbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Alloca8DbConnectionString"))
+);
 
 // Add Identity
 builder.Services.AddIdentity<Users, IdentityRole<Guid>>()
@@ -37,9 +45,9 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidateAudience = true,
             ValidateLifetime = true,
             ValidateIssuerSigningKey = true,
-            ValidIssuer = builder.Configuration["Jwt:Issuer"], // Add Jwt:Issuer in appsettings.json
-            ValidAudience = builder.Configuration["Jwt:Issuer"], // Add Jwt:Issuer in appsettings.json
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]?? "")) // Add Jwt:Key in appsettings.json
+            ValidIssuer = builder.Configuration["Jwt:Issuer"],
+            ValidAudience = builder.Configuration["Jwt:Issuer"],
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"] ?? ""))
         };
     });
 
@@ -54,10 +62,13 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 
-app.UseAuthentication(); // Add authentication middleware
-app.UseAuthorization(); // Add authorization middleware
+// Apply CORS before Authentication & Authorization
+app.UseCors("AllowAll");
+
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.MapControllers();
 

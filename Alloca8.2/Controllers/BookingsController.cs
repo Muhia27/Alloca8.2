@@ -1,8 +1,8 @@
 ﻿using Alloca8._2.Data;
 using Alloca8._2.Dtos;
 using Alloca8._2.Models.Entities;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
 
 namespace Alloca8._2.Controllers
 {

@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Sign Up</title>
+    <link rel="stylesheet"  href="sign.css" />
+
+</head>
+
+    <body>
+        <div class="container">
+        <h1>Join as : </h1>
+        <div class="border-Container">
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="userType" value="customer" />
+                    <span>Customer</span>
+
+                </label>
+            </div>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="userType" value="hotelOwner" />
+                    <span>Hotel Owner</span>
+                </label>
+               
+            </div>
+            </div>
+            <button id="Signup-button">Sign Up</button>
+        </div>
+        <script>
+            document.getElementById('Signup-button').addEventListener('click', () => {
+                const userType = document.querySelector('input[name="userType"]:checked')?.value;
+                if (userType === 'customer') {
+                    window.location.href = '../UserSide/SignUp.html';
+
+                }
+                else if (userType === 'hotelOwner') {
+                    window.location.href = '../AdminSide/Sign Up.html';
+                }
+                else {
+                    alert('Please select a user type');
+                }
+            });
+
+        </script>
+
+    </body>
+</html>

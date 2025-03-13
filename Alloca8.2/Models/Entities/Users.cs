@@ -14,8 +14,9 @@ namespace Alloca8._2.Models.Entities
     }
     public class Users : IdentityUser<Guid>
     {
-        
-        public string? ImageUrl { get; set; }//make nullable
+     
+
+       
         public UserRole Role { get; set; }
         public DateTime CreateDate { get; set; } = DateTime.UtcNow;
 

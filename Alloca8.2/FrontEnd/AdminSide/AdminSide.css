@@ -1,0 +1,49 @@
+﻿body {
+    font-family: sams-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.form-container {
+    border: 1px solid #dddddd;
+    padding: 80px;
+    width: 350px;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+.form-input {
+    width: calc(100%-22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+#Signup-button, #Signin-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: blue;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+    #Signin-button:hover, #Signup-button:hover {
+        background-color: #185abc;
+    }
+
+h1 {
+    margin-bottom: 30px;
+}

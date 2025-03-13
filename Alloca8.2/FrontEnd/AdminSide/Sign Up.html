@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Hotel Owner Sign UP</title>
+    <link rel="stylesheet" href="AdminSide.css" />
+</head>
+<body>
+    <script src="../api.js"></script>
+    <div class="container">
+        <h1>Hotel Owner Sign Up</h1>
+        <div class="form-container">
+            <input type="text" placeholder="UserName" class="form-input" />
+            <input type="email" placeholder="Email" class="form-input" />
+            <input type="password" placeholder="Password" class="form-input" />
+            <button id="Signup-button">Sign Up</button>
+            <p>Already have an account? <a href="Sign In.html">Sign In</a></p>
+            <p><a href="../Sign/Sign.html">Join as: </a></p>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const role = urlParams.get('role');
+
+            if (role) {
+                // Create a hidden input to store the role
+                const roleInput = document.createElement('input');
+                roleInput.type = 'hidden';
+                roleInput.name = 'role';
+                roleInput.value = role;
+
+                // Append the hidden input to the form
+                document.querySelector('.form-container').appendChild(roleInput);
+            } else {
+                alert('Role not specified in URL.');
+                // Handle the case where the role is missing (e.g., redirect back)
+            }
+
+            document.getElementById('Signup-button').addEventListener('click', () => {
+                const userType = document.querySelector('input[name="userType"]:checked')?.value;
+                console.log('User type selected:', userType);
+
+                if (userType === 'customer') {
+                    const customerUrl = '../UserSide/SignUp.html?role=Customer';
+                    console.log('Redirecting to customer URL:', customerUrl);
+                    window.location.href = customerUrl;
+                } else if (userType === 'hotelOwner') {
+                    const hotelOwnerUrl = '../AdminSide/Sign Up.html?role=HotelOwner';
+                    console.log('Redirecting to hotel owner URL:', hotelOwnerUrl);
+                    window.location.href = hotelOwnerUrl;
+                } else {
+                    alert('Please select a user type');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

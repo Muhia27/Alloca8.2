@@ -37,10 +37,12 @@ namespace Alloca8._2.Controllers
         {
             var user = new Users
             {
+           
                 UserName = registrationDto.UserName, // Corrected property name
                 Email = registrationDto.Email,
                 Role = registrationDto.Role,
-                ImageUrl = registrationDto.ImageUrl,
+               
+
             };
 
             var result = await _userManager.CreateAsync(user, registrationDto.Password);
@@ -77,7 +79,6 @@ namespace Alloca8._2.Controllers
                 UserName = u.UserName ?? "",
                 Email = u.Email ?? "" ,
                 Role = u.Role,
-                ImageUrl = u.ImageUrl,
                 CreateDate = u.CreateDate,
             }).ToList();
 
