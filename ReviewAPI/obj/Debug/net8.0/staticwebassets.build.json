@@ -1,0 +1,228 @@
+{
+  "Version": 1,
+  "Hash": "LT4jpp9Ln1BpbUQbdpgNrBSum1oVQ0p3HXB13zwAc48=",
+  "Source": "ReviewAPI",
+  "BasePath": "_content/ReviewAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ReviewAPI\\wwwroot",
+      "Source": "ReviewAPI",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\ReviewAPI\\ReviewAPI\\wwwroot\\",
+      "BasePath": "_content/ReviewAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Admin\\source\\repos\\ReviewAPI\\ReviewAPI\\wwwroot\\desktop.ini",
+      "SourceId": "ReviewAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\ReviewAPI\\ReviewAPI\\wwwroot\\",
+      "BasePath": "_content/ReviewAPI",
+      "RelativePath": "desktop#[.{fingerprint}]?.ini",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ntijvv2270",
+      "Integrity": "9R4cU/EJUlCzHgNQ6dfvpO+SMdfLeoAEGVCxVnVW+mM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\desktop.ini"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\source\\repos\\ReviewAPI\\ReviewAPI\\wwwroot\\review.html",
+      "SourceId": "ReviewAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\source\\repos\\ReviewAPI\\ReviewAPI\\wwwroot\\",
+      "BasePath": "_content/ReviewAPI",
+      "RelativePath": "review#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "u33cckff1o",
+      "Integrity": "RlnWOYSNCSTkNfFDAfw5DEXUZ+iwTHoIx/W3q+oz13A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\review.html"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "desktop.ini",
+      "AssetFile": "C:\\Users\\Admin\\source\\repos\\ReviewAPI\\ReviewAPI\\wwwroot\\desktop.ini",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "50"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9R4cU/EJUlCzHgNQ6dfvpO+SMdfLeoAEGVCxVnVW+mM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 16:31:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9R4cU/EJUlCzHgNQ6dfvpO+SMdfLeoAEGVCxVnVW+mM="
+        }
+      ]
+    },
+    {
+      "Route": "desktop.ntijvv2270.ini",
+      "AssetFile": "C:\\Users\\Admin\\source\\repos\\ReviewAPI\\ReviewAPI\\wwwroot\\desktop.ini",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "50"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9R4cU/EJUlCzHgNQ6dfvpO+SMdfLeoAEGVCxVnVW+mM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 16:31:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ntijvv2270"
+        },
+        {
+          "Name": "label",
+          "Value": "desktop.ini"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9R4cU/EJUlCzHgNQ6dfvpO+SMdfLeoAEGVCxVnVW+mM="
+        }
+      ]
+    },
+    {
+      "Route": "review.html",
+      "AssetFile": "C:\\Users\\Admin\\source\\repos\\ReviewAPI\\ReviewAPI\\wwwroot\\review.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3988"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RlnWOYSNCSTkNfFDAfw5DEXUZ+iwTHoIx/W3q+oz13A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 20:48:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RlnWOYSNCSTkNfFDAfw5DEXUZ+iwTHoIx/W3q+oz13A="
+        }
+      ]
+    },
+    {
+      "Route": "review.u33cckff1o.html",
+      "AssetFile": "C:\\Users\\Admin\\source\\repos\\ReviewAPI\\ReviewAPI\\wwwroot\\review.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3988"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RlnWOYSNCSTkNfFDAfw5DEXUZ+iwTHoIx/W3q+oz13A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 20:48:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u33cckff1o"
+        },
+        {
+          "Name": "label",
+          "Value": "review.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RlnWOYSNCSTkNfFDAfw5DEXUZ+iwTHoIx/W3q+oz13A="
+        }
+      ]
+    }
+  ]
+}

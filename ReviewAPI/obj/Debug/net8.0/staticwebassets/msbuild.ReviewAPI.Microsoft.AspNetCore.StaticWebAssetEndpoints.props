@@ -1,0 +1,28 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/ReviewAPI/desktop.ini">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\desktop.ini'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-9R4cU/EJUlCzHgNQ6dfvpO\u002BSMdfLeoAEGVCxVnVW\u002BmM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"50"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u00229R4cU/EJUlCzHgNQ6dfvpO\u002BSMdfLeoAEGVCxVnVW\u002BmM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 13 Mar 2025 16:31:44 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ReviewAPI/desktop.ntijvv2270.ini">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\desktop.ini'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ntijvv2270"},{"Name":"integrity","Value":"sha256-9R4cU/EJUlCzHgNQ6dfvpO\u002BSMdfLeoAEGVCxVnVW\u002BmM="},{"Name":"label","Value":"_content/ReviewAPI/desktop.ini"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"50"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u00229R4cU/EJUlCzHgNQ6dfvpO\u002BSMdfLeoAEGVCxVnVW\u002BmM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 13 Mar 2025 16:31:44 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ReviewAPI/review.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\review.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-RlnWOYSNCSTkNfFDAfw5DEXUZ\u002BiwTHoIx/W3q\u002Boz13A="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3988"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022RlnWOYSNCSTkNfFDAfw5DEXUZ\u002BiwTHoIx/W3q\u002Boz13A=\u0022"},{"Name":"Last-Modified","Value":"Thu, 13 Mar 2025 20:48:02 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ReviewAPI/review.u33cckff1o.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\review.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"u33cckff1o"},{"Name":"integrity","Value":"sha256-RlnWOYSNCSTkNfFDAfw5DEXUZ\u002BiwTHoIx/W3q\u002Boz13A="},{"Name":"label","Value":"_content/ReviewAPI/review.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3988"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022RlnWOYSNCSTkNfFDAfw5DEXUZ\u002BiwTHoIx/W3q\u002Boz13A=\u0022"},{"Name":"Last-Modified","Value":"Thu, 13 Mar 2025 20:48:02 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>

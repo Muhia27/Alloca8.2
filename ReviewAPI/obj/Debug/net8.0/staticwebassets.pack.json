@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Admin\\source\\repos\\ReviewAPI\\ReviewAPI\\wwwroot\\desktop.ini",
+      "PackagePath": "staticwebassets\\desktop.ini"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\source\\repos\\ReviewAPI\\ReviewAPI\\wwwroot\\review.html",
+      "PackagePath": "staticwebassets\\review.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ReviewAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ReviewAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ReviewAPI.props",
+      "PackagePath": "build\\ReviewAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ReviewAPI.props",
+      "PackagePath": "buildMultiTargeting\\ReviewAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ReviewAPI.props",
+      "PackagePath": "buildTransitive\\ReviewAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,170 @@
+{
+  "Version": 1,
+  "ManifestType": "Build",
+  "Endpoints": [
+    {
+      "Route": "desktop.ini",
+      "AssetFile": "desktop.ini",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "50"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9R4cU/EJUlCzHgNQ6dfvpO+SMdfLeoAEGVCxVnVW+mM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 16:31:44 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9R4cU/EJUlCzHgNQ6dfvpO+SMdfLeoAEGVCxVnVW+mM="
+        }
+      ]
+    },
+    {
+      "Route": "desktop.ntijvv2270.ini",
+      "AssetFile": "desktop.ini",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "50"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9R4cU/EJUlCzHgNQ6dfvpO+SMdfLeoAEGVCxVnVW+mM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 16:31:44 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ntijvv2270"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9R4cU/EJUlCzHgNQ6dfvpO+SMdfLeoAEGVCxVnVW+mM="
+        },
+        {
+          "Name": "label",
+          "Value": "desktop.ini"
+        }
+      ]
+    },
+    {
+      "Route": "review.html",
+      "AssetFile": "review.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3988"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RlnWOYSNCSTkNfFDAfw5DEXUZ+iwTHoIx/W3q+oz13A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 20:48:02 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RlnWOYSNCSTkNfFDAfw5DEXUZ+iwTHoIx/W3q+oz13A="
+        }
+      ]
+    },
+    {
+      "Route": "review.u33cckff1o.html",
+      "AssetFile": "review.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3988"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RlnWOYSNCSTkNfFDAfw5DEXUZ+iwTHoIx/W3q+oz13A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 20:48:02 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u33cckff1o"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RlnWOYSNCSTkNfFDAfw5DEXUZ+iwTHoIx/W3q+oz13A="
+        },
+        {
+          "Name": "label",
+          "Value": "review.html"
+        }
+      ]
+    }
+  ]
+}
