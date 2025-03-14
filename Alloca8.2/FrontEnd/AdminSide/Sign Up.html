@@ -20,40 +20,31 @@
     </div>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const urlParams = new URLSearchParams(window.location.search);
-            const role = urlParams.get('role');
+            const role = localStorage.getItem('selectedRole');
 
-            if (role) {
-                // Create a hidden input to store the role
-                const roleInput = document.createElement('input');
-                roleInput.type = 'hidden';
-                roleInput.name = 'role';
-                roleInput.value = role;
-
-                // Append the hidden input to the form
-                document.querySelector('.form-container').appendChild(roleInput);
-            } else {
-                alert('Role not specified in URL.');
-                // Handle the case where the role is missing (e.g., redirect back)
+            if (!role) {
+                alert('Role not selected. Redirecting to selection page...');
+                window.location.href = '../Sign/Sign.html';
+                return;
             }
 
-            document.getElementById('Signup-button').addEventListener('click', () => {
-                const userType = document.querySelector('input[name="userType"]:checked')?.value;
-                console.log('User type selected:', userType);
+            // Create a hidden input field for role
+            const roleInput = document.createElement('input');
+            roleInput.type = 'hidden';
+            roleInput.name = 'role';
+            roleInput.value = role;
 
-                if (userType === 'customer') {
-                    const customerUrl = '../UserSide/SignUp.html?role=Customer';
-                    console.log('Redirecting to customer URL:', customerUrl);
-                    window.location.href = customerUrl;
-                } else if (userType === 'hotelOwner') {
-                    const hotelOwnerUrl = '../AdminSide/Sign Up.html?role=HotelOwner';
-                    console.log('Redirecting to hotel owner URL:', hotelOwnerUrl);
-                    window.location.href = hotelOwnerUrl;
-                } else {
-                    alert('Please select a user type');
-                }
+            document.querySelector('.form-container').appendChild(roleInput);
+
+            document.getElementById("Signup-button").addEventListener("click", () => {
+                const userName = document.querySelector('input[placeholder="UserName"]').value;
+                const email = document.querySelector('input[placeholder="Email"]').value;
+                const password = document.querySelector('input[placeholder="Password"]').value;
+
+                registerUser(userName, email, password, role);
             });
         });
+
     </script>
 </body>
 </html>

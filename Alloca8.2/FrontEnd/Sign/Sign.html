@@ -31,17 +31,23 @@
         <script>
             document.getElementById('Signup-button').addEventListener('click', () => {
                 const userType = document.querySelector('input[name="userType"]:checked')?.value;
-                if (userType === 'customer') {
-                    window.location.href = '../UserSide/SignUp.html';
 
-                }
-                else if (userType === 'hotelOwner') {
-                    window.location.href = '../AdminSide/Sign Up.html';
-                }
-                else {
+                if (userType) {
+                    localStorage.setItem('selectedRole', userType); // Store the role
+
+                    // Use a timeout to ensure the storage is set before redirecting
+                    setTimeout(() => {
+                        if (userType === 'customer') {
+                            window.location.href = '../UserSide/SignUp.html';
+                        } else if (userType === 'hotelOwner') {
+                            window.location.href = '../AdminSide/Sign Up.html';
+                        }
+                    }, 100); // Small delay to ensure storage works
+                } else {
                     alert('Please select a user type');
                 }
             });
+
 
         </script>
 
