@@ -1,17 +1,22 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Alloca8._2.Models.Entities;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
-namespace Alloca8._2.Models.Entities
+public class HotelImages
 {
-    public class HotelImages
-    {
-        [Key]
-        public int ImageID { get; set; }  // Primary Key
-        public int HotelID { get; set; }  // Foreign Key to Hotels
-        public int RoomID { get; set; }  // Foreign Key to Rooms
-        public string? ImageURL { get; set; }  // Image location
+    [Key]
+    public Guid ImageID { get; set; }
 
-        public Hotels? Hotels { get; set; }
-        public Rooms? Rooms { get; set; }
-    }
+    public Guid HotelID { get; set; }
 
+    public Guid? RoomID { get; set; }
+
+    public string ImagePath { get; set; } = string.Empty;
+
+    // Navigation Properties
+    [ForeignKey("HotelID")]
+    public Hotels? Hotel { get; set; }
+
+    [ForeignKey("RoomID")]
+    public Rooms? Room { get; set; }
 }

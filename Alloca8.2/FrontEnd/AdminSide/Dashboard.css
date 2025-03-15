@@ -1,0 +1,132 @@
+﻿/*
+Author:Muhia
+Theme: Dishi mtaani Admin
+
+Version 1.0;
+*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    padding: 1%;
+    width: 80%;
+    margin: 0% auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+.tbl-full {
+    width: 100%;
+}
+
+.tbl-30 {
+    width: 30%;
+}
+
+table tr th {
+    border-bottom: 1px solid black;
+    padding: 1%;
+    text-align: left;
+}
+
+table tr td {
+    padding: 1%;
+}
+
+.btn-primary {
+    background-color: blue;
+    padding: 1%;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+    .btn-primary:hover {
+        background-color: #185abc;
+    }
+
+.btn-secondary {
+    background-color: blue;
+    padding: 1%;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+    .btn-secondary:hover {
+        background-color: #185abc;
+    }
+
+.btn-danger {
+    background-color:blue;
+    padding: 1%;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+    .btn-danger:hover {
+        background-color: #185abc;
+    }
+/* css for menu*/
+.meu {
+    border-bottom: 1px solid grey;
+}
+
+.menu {
+    text-align: center;
+}
+
+    .menu ul {
+        list-style-type: none;
+    }
+
+        .menu ul li {
+            display: inline;
+            padding: 1%;
+        }
+
+            .menu ul li a {
+                text-decoration: none;
+                font-weight: bold;
+                color:blue;
+            }
+
+                .menu ul li a:hover {
+                    color: #185abc;
+                }
+/* css for main content*/
+.main-content {
+    background-color: #dfe4ea;
+    padding: 3%;
+}
+
+.col-4 {
+    width: 18%;
+    background-color: aliceblue;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+}
+/* css for footer*/
+.footer {
+    background-color: blue;
+}
+
+/* login css*/
+.login {
+    border: 1px solid gray;
+    width: 20%;
+    margin: 10% auto;
+    padding: 2%;
+}

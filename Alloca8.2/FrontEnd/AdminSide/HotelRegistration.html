@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Your Hotel</title>
+    <link rel="stylesheet" href="AdminSide.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Register Your Hotel</h1>
+        <form id="hotelForm" enctype="multipart/form-data">
+            <input type="text" class="form-input" name="name" placeholder="Hotel Name" required>
+
+            <textarea class="form-input" name="location" placeholder="Hotel Location" id="locationInput" required></textarea>
+            <p id="charCount">Characters: 0/20</p>
+
+            <input type="file" class="form-input" name="image" accept="image/*" required>
+
+            <button type="submit" id="Signup-button">Register Hotel</button>
+        </form>
+    </div>
+
+    <script>
+        // Select the location input field and character count display
+        const locationInput = document.getElementById('locationInput');
+        const charCount = document.getElementById('charCount');
+        const maxLength = 20;
+
+        locationInput.addEventListener('input', function () {
+            let currentLength = this.value.length;
+
+            // Update character count
+            charCount.textContent = `Characters: ${currentLength}/${maxLength}`;
+
+            // Trim input if it exceeds maxLength
+            if (currentLength > maxLength) {
+                this.value = this.value.slice(0, maxLength);
+                charCount.textContent = `Characters: ${maxLength}/${maxLength}`;
+            }
+        });
+    </script>
+
+</body>
+</html>

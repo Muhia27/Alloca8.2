@@ -1,4 +1,10 @@
-﻿body {
+﻿/*
+Author:Muhia
+Theme: Alloca8
+
+*/
+
+body {
     font-family: sams-serif;
     display: flex;
     justify-content: center;
@@ -47,3 +53,6 @@
 h1 {
     margin-bottom: 30px;
 }
+
+
+
