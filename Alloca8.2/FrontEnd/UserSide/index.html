@@ -1,0 +1,38 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page | LALANASI</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="header"></div> <!-- Placeholder for header -->
+
+    <main class="content">
+        <h1>Welcome to LALANASI</h1>
+        <p>Explore our amazing homes and hotels.</p>
+    </main>
+
+    <div id="footer"></div> <!-- Placeholder for footer -->
+    <!-- Add this JavaScript code before closing </body> -->
+    <script>
+        // Load header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading header:', error));
+
+        // Load footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    </script>
+</body>
+</html>

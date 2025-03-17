@@ -1,53 +1,67 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Alloca8 hotels page</title>
-    <link rel="stylesheet" href="Dashboard.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Your Hotel</title>
+    <link rel="stylesheet" href="AdminSide.css">
 </head>
 <body>
-    <div class="main-content">
-        <div class="wrapper">
-            <h1>ADD HOTEL</h1>
-            <br><br>
-
-            <form action="" method="POST" enctype="multipart/form-data">
-                <table class="tbl-30">
-                    <tr>
-                        <td>Title:</td>
-                        <td><input type="text" name="title" placeholder="Hotel-Name"></td>
-                    </tr>
-                    <tr>
-                        <td>Description:</td>
-                        <td><textarea name="description" cols="30" rows="5" placeholder="Hotel-description"></textarea></td>
-                    </tr>
-
-                    <tr>
-                        <td>Select Image:</td>
-                        <td><input type="file" name="image"></td>
-                    </tr>
-
-                    <tr>
-                        <td>Featured:</td>
-                        <td>
-                            <input type="radio" name="featured" value="yes">Yes
-                            <input type="radio" name="featured" value="no">No
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Active:</td>
-                        <td>
-                            <input type="radio" name="active" value="yes">Yes
-                            <input type="radio" name="active" value="no">No
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <input type="submit" name="submit" value="Add Hotel" class="btn-secondary">
-                        </td>
-                    </tr>
-                </table>
-            </form>
-        </div>
+    <div class="form-container">
+        <h1>Register Your Hotel</h1>
+        <form id="hotelForm" enctype="multipart/form-data">
+            <input type="text" class="form-input" name="name" placeholder="Hotel Name" required>
+            <textarea class="form-input" name="location" placeholder="Hotel Location" id="locationInput" required></textarea>
+            <p id="charCount">Characters: 0/20</p>
+            <input type="file" class="form-input" name="image" accept="image/*" required>
+            <button type="submit" id="Signup-button">Register Hotel</button>
+        </form>
     </div>
+
+    <script>
+        // Select the location input field and character count display
+        const locationInput = document.getElementById('locationInput');
+        const charCount = document.getElementById('charCount');
+        const maxLength = 20;
+
+        locationInput.addEventListener('input', function () {
+            let currentLength = this.value.length;
+            charCount.textContent = `Characters: ${currentLength}/${maxLength}`;
+            if (currentLength > maxLength) {
+                this.value = this.value.slice(0, maxLength);
+                charCount.textContent = `Characters: ${maxLength}/${maxLength}`;
+            }
+        });
+
+        // Hotel Registration Form Submission
+        document.getElementById('hotelForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const formData = new FormData(this);
+            const ownerID = localStorage.getItem('ownerID'); // Get ownerID from localStorage
+
+            if (!ownerID) {
+                alert('Owner ID not found. Please sign up or sign in.');
+                return;
+            }
+
+            formData.append('ownerID', ownerID); // Add ownerID to form data
+
+            fetch('http://localhost:your_port/api/AddHotel/AddHotel', { // Replace your_port
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+                alert('Hotel registered successfully!');
+                document.getElementById('hotelForm').reset();
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred while registering the hotel.');
+            });
+        });
+    </script>
 </body>
 </html>

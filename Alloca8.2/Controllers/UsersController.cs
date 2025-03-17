@@ -37,11 +37,11 @@ namespace Alloca8._2.Controllers
         {
             var user = new Users
             {
-           
+
                 UserName = registrationDto.UserName, // Corrected property name
                 Email = registrationDto.Email,
                 Role = registrationDto.Role,
-               
+
 
             };
 
@@ -77,7 +77,7 @@ namespace Alloca8._2.Controllers
             {
                 Id = u.Id,
                 UserName = u.UserName ?? "",
-                Email = u.Email ?? "" ,
+                Email = u.Email ?? "",
                 Role = u.Role,
                 CreateDate = u.CreateDate,
             }).ToList();

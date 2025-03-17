@@ -1,0 +1,149 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap');
+
+body {
+    font-family: 'Kameron', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111010;
+}
+
+/* Header Styling */
+header {
+    background-color: #192a56; /* British Palette */
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #192a56;
+    padding: 10px;
+    gap: 30px; /* Reduced gap for better spacing */
+}
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        transition: color 0.3s ease-in-out, transform 0.2s;
+    }
+
+        /* Hover Effect for Nav Links */
+        nav a:hover {
+            color: #fffa65; /* Unmellow Yellow */
+            text-decoration: underline;
+            transform: scale(1.1);
+        }
+
+/* Sign In Button */
+.sign-in {
+    background-color: #ff9f1a; /* Radiant Yellow */
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+    font-family: 'Roboto Mono', monospace;
+}
+
+    /* Hover, Click, and Focus Effects for Button */
+    .sign-in:hover {
+        background-color: #17c0eb; /* Spiro Disco Ball */
+        transform: scale(1.05);
+    }
+
+    .sign-in:active {
+        background-color: #3ae374; /* Weird Green */
+    }
+
+    .sign-in:focus {
+        outline: 3px solid #fffa65; /* Better accessibility */
+    }
+
+/* Content Section */
+.content {
+    background: url('images/myhotel.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 100vh; /* Full height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #f7f3e1; /* Ensuring text is visible */
+    padding: 20px;
+}
+
+    /* Ensuring better text contrast */
+    .content h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: #fff;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    }
+
+    .content p {
+        font-size: 18px;
+        line-height: 1.6;
+        max-width: 600px;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+/* Footer Styling */
+footer {
+    background-color: #192a56;
+    color: #fff;
+    text-align: center;
+    padding: 15px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative; /* Prevents overlapping content */
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+    .social-icons a {
+        color: #fff;
+        font-size: 20px;
+        transition: 0.3s;
+    }
+
+        .social-icons a:hover {
+            color: #fffa65; /* Unmellow Yellow */
+            transform: scale(1.2);
+        }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 0;
+    }
+
+    .sign-in {
+        width: 100%;
+        max-width: 150px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}

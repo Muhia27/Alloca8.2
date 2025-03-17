@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotels</title>
+    <link rel="stylesheet" href="../Assets/css/User.css">
+</head>
+<body>
+    <!--Hotel Categories-->
+    <section id="hotel-category">
+        <label for="category-select">Pick Category</label>
+        <select id="category-select">
+            <option value=""> </option>
+            <option value="Standard">Standard</option>
+            <option value="Deluxe">Deluxe</option>
+            <option value="Suite">Suite</option>
+            <option value="Family">Family Room</option>
+            <option value="Penthouse">Penthouse</option>
+            <option value="BnB">BnB</option>
+        </select>
+    </section>
+
+    <section id="hotel-carousel">
+        <div id="carousel-container">
+            <!-- Hotel cards will be inserted here -->
+            <a href="booking.html?hotel=HotelSunrise" class="hotel-card">
+                <img src="../pics/6803cd77-6ad0-4d36-b6ce-53db22183c74.jpeg" alt="Hotel 1">
+                <div class="hotel-card-details">
+                    <h3>Hotel Sunrise</h3>
+                    <p>$120 per night</p>
+                </div>
+            </a>
+
+            <a href="booking.html?hotel=GrandPlaza" class="hotel-card">
+                <img src="../pics/37 Lavish Luxury Villas.jpeg" alt="Hotel 2">
+                <div class="hotel-card-details">
+                    <h3>Grand Plaza</h3>
+                    <p>$200 per night</p>
+                </div>
+            </a>
+
+            <a href="booking.html?hotel=OceanView" class="hotel-card">
+                <img src="../pics/Gallery of Naz City Hotel Taksim _ Metex Design Group  - 1.jpeg" alt="Hotel 3">
+                <div class="hotel-card-details">
+                    <h3>Ocean View</h3>
+                    <p>$150 per night</p>
+                </div>
+            </a>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <button id="previous" class="carousel-btn">&#10094;</button>
+        <button id="next" class="carousel-btn">&#10095;</button>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const carouselContainer = document.getElementById("carousel-container");
+            const prevBtn = document.getElementById("previous");
+            const nextBtn = document.getElementById("next");
+
+            // Scroll left
+            prevBtn.addEventListener("click", function () {
+                carouselContainer.scrollBy({ left: -320, behavior: "smooth" });
+            });
+
+            // Scroll right
+            nextBtn.addEventListener("click", function () {
+                carouselContainer.scrollBy({ left: 320, behavior: "smooth" });
+            });
+
+            // Optional: Loop back when reaching end
+            carouselContainer.addEventListener("scroll", function () {
+                if (carouselContainer.scrollLeft + carouselContainer.clientWidth >= carouselContainer.scrollWidth) {
+                    carouselContainer.scrollTo({ left: 0, behavior: "smooth" });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
