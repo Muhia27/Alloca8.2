@@ -66,6 +66,31 @@ namespace Alloca8._2.Migrations
                     b.ToTable("Bookings");
                 });
 
+            modelBuilder.Entity("Alloca8._2.Models.Entities.HotelImages", b =>
+                {
+                    b.Property<Guid>("ImageID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("HotelID")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("ImagePath")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid?>("RoomID")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("ImageID");
+
+                    b.HasIndex("HotelID");
+
+                    b.HasIndex("RoomID");
+
+                    b.ToTable("HotelImages");
+                });
+
             modelBuilder.Entity("Alloca8._2.Models.Entities.Hotels", b =>
                 {
                     b.Property<Guid>("HotelID")
@@ -234,9 +259,6 @@ namespace Alloca8._2.Migrations
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
 
-                    b.Property<Guid?>("OwnerID")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<string>("PasswordHash")
                         .HasColumnType("nvarchar(max)");
 
@@ -270,31 +292,6 @@ namespace Alloca8._2.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers", (string)null);
-                });
-
-            modelBuilder.Entity("HotelImages", b =>
-                {
-                    b.Property<Guid>("ImageID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("HotelID")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("ImagePath")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<Guid?>("RoomID")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("ImageID");
-
-                    b.HasIndex("HotelID");
-
-                    b.HasIndex("RoomID");
-
-                    b.ToTable("HotelImages");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole<System.Guid>", b =>
@@ -449,6 +446,24 @@ namespace Alloca8._2.Migrations
                     b.Navigation("Users");
                 });
 
+            modelBuilder.Entity("Alloca8._2.Models.Entities.HotelImages", b =>
+                {
+                    b.HasOne("Alloca8._2.Models.Entities.Hotels", "Hotel")
+                        .WithMany("HotelImages")
+                        .HasForeignKey("HotelID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Alloca8._2.Models.Entities.Rooms", "Room")
+                        .WithMany("RoomImages")
+                        .HasForeignKey("RoomID")
+                        .OnDelete(DeleteBehavior.SetNull);
+
+                    b.Navigation("Hotel");
+
+                    b.Navigation("Room");
+                });
+
             modelBuilder.Entity("Alloca8._2.Models.Entities.Hotels", b =>
                 {
                     b.HasOne("Alloca8._2.Models.Entities.Users", "HotelOwner")
@@ -499,24 +514,6 @@ namespace Alloca8._2.Migrations
                         .IsRequired();
 
                     b.Navigation("Hotel");
-                });
-
-            modelBuilder.Entity("HotelImages", b =>
-                {
-                    b.HasOne("Alloca8._2.Models.Entities.Hotels", "Hotel")
-                        .WithMany("HotelImages")
-                        .HasForeignKey("HotelID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Alloca8._2.Models.Entities.Rooms", "Room")
-                        .WithMany("RoomImages")
-                        .HasForeignKey("RoomID")
-                        .OnDelete(DeleteBehavior.SetNull);
-
-                    b.Navigation("Hotel");
-
-                    b.Navigation("Room");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<System.Guid>", b =>

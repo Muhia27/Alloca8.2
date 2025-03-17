@@ -37,61 +37,37 @@ namespace Alloca8._2.Controllers
         {
             var user = new Users
             {
-                UserName = registrationDto.UserName,
+
+                UserName = registrationDto.UserName, // Corrected property name
                 Email = registrationDto.Email,
                 Role = registrationDto.Role,
-                OwnerID = registrationDto.OwnerID 
+
+
             };
 
             var result = await _userManager.CreateAsync(user, registrationDto.Password);
 
             if (result.Succeeded)
             {
-                return Ok(new { Message = "User registered successfully", ownerID = user.OwnerID }); // Return ownerID
+                return Ok(new { Message = "User registered successfully" });
             }
 
             return BadRequest(result.Errors);
         }
 
         // User Login
-        [HttpPost("login")]
+        [HttpPost("login")] // Corrected endpoint name
         public async Task<IActionResult> Login(UserLoginDto loginDto)
         {
-            try
+            var user = await _userManager.FindByEmailAsync(loginDto.Email);
+            if (user != null && await _userManager.CheckPasswordAsync(user, loginDto.Password))
             {
-                Console.WriteLine($"Login attempt: Email={loginDto.Email}"); // Log email
-                var user = await _userManager.FindByEmailAsync(loginDto.Email); // Retrieve user
-
-                if (user != null)
-                {
-                    Console.WriteLine($"User found: UserName={user.UserName}, UserId={user.Id}"); // Log user info
-                    var passwordCheckResult = await _userManager.CheckPasswordAsync(user, loginDto.Password); // Verify password
-                    Console.WriteLine($"Password check result: {passwordCheckResult}"); // Log password check result
-
-                    if (passwordCheckResult)
-                    {
-                        var token = GenerateJwtToken(user);
-                        Console.WriteLine($"JWT generated successfully.");
-                        return Ok(new { Token = token, OwnerID = user.OwnerID, Role = user.Role });
-                    }
-                    else
-                    {
-                        Console.WriteLine($"Login failed: Invalid password for {loginDto.Email}");
-                        return Unauthorized("Invalid email or password.");
-                    }
-                }
-                else
-                {
-                    Console.WriteLine($"Login failed: User not found for {loginDto.Email}");
-                    return Unauthorized("Invalid email or password.");
-                }
+                var token = GenerateJwtToken(user);
+                return Ok(new { Token = token });
             }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Login error: {ex.Message} {ex.StackTrace}");
-                return StatusCode(500, $"Internal server error: {ex.Message}"); // Include exception message
-            }
+            return Unauthorized();
         }
+
         // Get All Users
         [HttpGet]
         [Authorize(Roles = "Admin")] // Example: Only Admins can access this endpoint
@@ -110,44 +86,26 @@ namespace Alloca8._2.Controllers
         }
 
         // JWT TOKEN GENERATOR
-
         private string GenerateJwtToken(Users user)
         {
-            try
+            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"] ?? "")); // Corrected class name
+            var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256); // Corrected syntax
+
+            var claims = new[]
             {
-                Console.WriteLine($"Generating JWT for {user.Email}");
-                Console.WriteLine($"Jwt:Key: {_configuration["Jwt:Key"]}");
-                Console.WriteLine($"Jwt:Issuer: {_configuration["Jwt:Issuer"]}");
-                Console.WriteLine($"Jwt:Audience: {_configuration["Jwt:Audience"]}");
-                Console.WriteLine($"User.UserName: {user.UserName}");
-                Console.WriteLine($"User.Email: {user.Email}");
-                Console.WriteLine($"User.Id: {user.Id}");
-                Console.WriteLine($"User.Role: {user.Role}");
+                new Claim(JwtRegisteredClaimNames.Sub, user.UserName ?? ""), // Ambiguous namespace fixed
+                new Claim(JwtRegisteredClaimNames.Email, user.Email ?? ""), // Ambiguous namespace fixed
+                new Claim(ClaimTypes.Role, user.Role.ToString() ?? ""),
+                new Claim(ClaimTypes.NameIdentifier, user.Id.ToString() ?? "")
+            };
 
-                var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"] ?? ""));
-                var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+            var token = new JwtSecurityToken(_configuration["Jwt:Issuer"] ?? "",
+                _configuration["Jwt:Issuer"] ?? "",
+                claims,
+                expires: DateTime.Now.AddMinutes(120),
+                signingCredentials: credentials);
 
-                var claims = new[]
-                {
-            new Claim(JwtRegisteredClaimNames.Sub, user.UserName ?? ""),
-            new Claim(JwtRegisteredClaimNames.Email, user.Email ?? ""),
-            new Claim(ClaimTypes.Role, user.Role.ToString() ?? ""),
-            new Claim(ClaimTypes.NameIdentifier, user.Id.ToString() ?? "")
-        };
-
-                var token = new JwtSecurityToken(_configuration["Jwt:Issuer"] ?? "",
-                    _configuration["Jwt:Issuer"] ?? "",
-                    claims,
-                    expires: DateTime.Now.AddMinutes(120),
-                    signingCredentials: credentials);
-
-                return new JwtSecurityTokenHandler().WriteToken(token);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"JWT error: {ex.Message} {ex.StackTrace}");
-                throw;
-            }
+            return new JwtSecurityTokenHandler().WriteToken(token);
         }
     }
 }
