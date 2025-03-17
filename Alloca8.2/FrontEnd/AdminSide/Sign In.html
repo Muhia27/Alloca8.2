@@ -9,14 +9,46 @@
     <div class="container">
         <h1>Hotel Owner Sign In</h1>
         <div class="form-container">
-            <input type="text" placeholder="UserName" class="form-input" />
             <input type="email" placeholder="Email" class="form-input" />
             <input type="password" placeholder="Password" class="form-input" />
             <button id="Signin-button">Sign In</button>
             <p>Don't have an account? <a href="Sign Up.html">Sign Up</a></p>
-
         </div>
     </div>
 
+    <script>
+        document.getElementById('Signin-button').addEventListener('click', async () => {
+            const email = document.querySelector('input[placeholder="Email"]').value;
+            const password = document.querySelector('input[placeholder="Password"]').value;
+
+            try {
+                const response = await fetch('http://localhost:5056/api/Users/login', { // Replace with your API endpoint
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email, password })
+                });
+
+                const result = await response.json();
+
+                if (response.ok) {
+                    localStorage.setItem('token', result.token);
+                    localStorage.setItem('ownerID', result.ownerID);
+                    localStorage.setItem('role', result.role);
+
+                    if (result.role === 2) { // Assuming hotelOwner role is 2
+                        window.location.href = 'HotelRegistration.html';
+                    } else {
+                        // Redirect other user roles as needed
+                        window.location.href = "someOtherPage.html";
+                    }
+                } else {
+                    alert('Sign-in failed. Invalid credentials.');
+                }
+            } catch (error) {
+                console.error('Sign-in error:', error);
+                alert('An error occurred during sign-in.');
+            }
+        });
+    </script>
 </body>
 </html>

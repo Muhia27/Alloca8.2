@@ -65,6 +65,7 @@ namespace Alloca8._2.Controllers
             return CreatedAtAction(nameof(GetHotel), new { id = newHotel.HotelID }, newHotel);
         }
 
+
         //  Get all Hotels
         [HttpGet("GetHotels")]
         public async Task<ActionResult<IEnumerable<Hotels>>> GetHotels()
