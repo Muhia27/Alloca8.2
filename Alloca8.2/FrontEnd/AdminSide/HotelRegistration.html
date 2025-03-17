@@ -14,10 +14,22 @@
             <textarea class="form-input" name="description" placeholder="Hotel Location" id="locationInput" required></textarea>
             <p id="charCount">Characters: 0/20</p>
             <input type="file" class="form-input" name="image" accept="image/*" required>
+
+            <div>
+                <label>Featured:</label>
+                <input type="radio" name="isFeatured" value="true"> Yes
+                <input type="radio" name="isFeatured" value="false" checked> No
+            </div>
+
+            <div>
+                <label>Active:</label>
+                <input type="radio" name="isActive" value="true" checked> Yes
+                <input type="radio" name="isActive" value="false"> No
+            </div>
+            <br /><br />
             <button type="submit" id="Signup-button">Register Hotel</button>
         </form>
-        <p>Already have an account? <a href="Sign In.html">Sign In</a></p>
-        <p><a href="../Sign/Sign.html">Join as: </a></p>
+        
     </div>
 
     <script>

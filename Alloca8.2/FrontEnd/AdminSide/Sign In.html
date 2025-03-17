@@ -17,7 +17,7 @@
     </div>
 
     <script>
-        document.getElementById('Signin-button').addEventListener('click', async () => {
+         document.getElementById('Signin-button').addEventListener('click', async () => {
             const email = document.querySelector('input[placeholder="Email"]').value;
             const password = document.querySelector('input[placeholder="Password"]').value;
 
@@ -34,13 +34,11 @@
                     localStorage.setItem('token', result.token);
                     localStorage.setItem('ownerID', result.ownerID);
                     localStorage.setItem('role', result.role);
+                    localStorage.setItem('userName', result.userName); // Store userName upon login
 
-                    if (result.role === 2) { // Assuming hotelOwner role is 2
-                        window.location.href = 'HotelRegistration.html';
-                    } else {
-                        // Redirect other user roles as needed
-                        window.location.href = "someOtherPage.html";
-                    }
+                    // Redirect to index.html (your dashboard)
+                    window.location.href = 'index.html';
+
                 } else {
                     alert('Sign-in failed. Invalid credentials.');
                 }
