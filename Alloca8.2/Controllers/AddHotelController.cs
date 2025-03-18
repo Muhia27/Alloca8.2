@@ -1,130 +1,159 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Alloca8._2.Models.Entities;
-using Alloca8._2.Data;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
+using Alloca8._2.Models.Entities;
+using Alloca8._2.Data;
 using Alloca8._2.Dtos;
 
 namespace Alloca8._2.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class AddHotelController : ControllerBase
+    public class AddHotelController(Alloca8DbContext context, ILogger<AddHotelController> logger) : ControllerBase
     {
-        private readonly Alloca8DbContext _context;
+        private readonly Alloca8DbContext _context = context;
+        private readonly ILogger<AddHotelController> _logger = logger;
 
-        public AddHotelController(Alloca8DbContext context)
-        {
-            _context = context;
-        }
-
-        // ✅ Register a Hotel (Now Uses DTO)
+        // ✅ Register a Hotel (Fixes GUID Issue & Logging Template)
         [HttpPost("AddHotel")]
+        [Authorize]
         public async Task<IActionResult> AddHotel([FromForm] HotelRegistrationDtoClass hotelDTO, [FromForm] IFormFile? imageFile)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            // Ensure user can only register one hotel
-            var existingHotel = await _context.Hotels.FirstOrDefaultAsync(h => h.OwnerID == hotelDTO.OwnerID);
-            if (existingHotel != null)
+            // 🔹 Get OwnerID as GUID
+            if (!Guid.TryParse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value, out var ownerID))
+                return Unauthorized("User authentication failed.");
+
+            _logger.LogInformation("Authenticated OwnerID: {OwnerID}", ownerID);
+
+            // 🔹 Ensure User doesn't already own a hotel
+            if (await _context.Hotels.AnyAsync(h => h.OwnerID == ownerID))
                 return BadRequest("User already owns a hotel.");
 
-            // Create new hotel entity
             var newHotel = new Hotels
             {
                 HotelID = Guid.NewGuid(),
                 Name = hotelDTO.Name,
                 Description = hotelDTO.Description,
-                OwnerID = hotelDTO.OwnerID,
-                CreateDate = DateTime.UtcNow
+                OwnerID = ownerID,
+                CreateDate = DateTime.UtcNow,
+                IsFeatured = hotelDTO.IsFeatured,
+                IsActive = hotelDTO.IsActive
             };
 
-            // Save hotel first
             _context.Hotels.Add(newHotel);
             await _context.SaveChangesAsync();
 
-            // Handle Image Upload if provided
-            if (imageFile != null && imageFile.Length > 0)
+            string? imageUrl = null;
+            if (imageFile?.Length > 0)
             {
-                var imageEntity = new HotelImages
+                var imagePath = await SaveImage(imageFile);
+                _context.HotelImages.Add(new HotelImages
                 {
                     ImageID = Guid.NewGuid(),
                     HotelID = newHotel.HotelID,
-                    ImagePath = await SaveImage(imageFile)
-                };
-
-                _context.HotelImages.Add(imageEntity);
+                    ImagePath = imagePath
+                });
                 await _context.SaveChangesAsync();
+                imageUrl = imagePath;
             }
 
-            return CreatedAtAction(nameof(GetHotel), new { id = newHotel.HotelID }, newHotel);
+            return CreatedAtAction(nameof(GetHotel), new { id = newHotel.HotelID }, new AddHotelResponseDto(
+                newHotel.HotelID,
+                newHotel.Name,
+                newHotel.Description,
+                imageUrl,
+                newHotel.IsFeatured,
+                newHotel.IsActive
+            ));
         }
 
-
-        //  Get all Hotels
+        // ✅ Get all Hotels
         [HttpGet("GetHotels")]
-        public async Task<ActionResult<IEnumerable<Hotels>>> GetHotels()
+        public async Task<ActionResult<IEnumerable<AddHotelResponseDto>>> GetHotels()
         {
-            var hotels = await _context.Hotels.Include(h => h.HotelImages).ToListAsync();
+            var hotels = await _context.Hotels
+                .Include(h => h.HotelImages)
+                .Select(h => new AddHotelResponseDto(
+                    h.HotelID,
+                    h.Name,
+                    h.Description,
+                    h.HotelImages.FirstOrDefault()!.ImagePath,
+                    h.IsFeatured,
+                    h.IsActive
+                ))
+                .ToListAsync();
+
             return Ok(hotels);
         }
 
-        // Get Hotel by ID
+        // ✅ Get Hotel by ID
         [HttpGet("GetHotel/{id}")]
-        public async Task<ActionResult<Hotels>> GetHotel(Guid id)
+        public async Task<ActionResult<AddHotelResponseDto>> GetHotel(Guid id)
         {
-            var hotel = await _context.Hotels.Include(h => h.HotelImages).FirstOrDefaultAsync(h => h.HotelID == id);
+            var hotel = await _context.Hotels
+                .Include(h => h.HotelImages)
+                .Where(h => h.HotelID == id)
+                .Select(h => new AddHotelResponseDto(
+                    h.HotelID,
+                    h.Name ?? string.Empty,
+                    h.Description ?? string.Empty,
+                    h.HotelImages.FirstOrDefault()!.ImagePath,
+                    h.IsFeatured,
+                    h.IsActive
+                ))
+                .FirstOrDefaultAsync();
 
-            if (hotel == null)
-                return NotFound();
-
-            return hotel;
+            return hotel is null ? NotFound() : Ok(hotel);
         }
 
-        //  Delete Hotel
+        // ✅ Delete Hotel (Only Owner Can Delete)
         [HttpDelete("DeleteHotel/{hotelId}")]
+        [Authorize]
         public async Task<IActionResult> DeleteHotel(Guid hotelId)
         {
-            var hotelToDelete = await _context.Hotels.Include(h => h.HotelImages).FirstOrDefaultAsync(h => h.HotelID == hotelId);
-            if (hotelToDelete == null)
+            var hotelToDelete = await _context.Hotels
+                .Include(h => h.HotelImages)
+                .FirstOrDefaultAsync(h => h.HotelID == hotelId);
+
+            if (hotelToDelete is null)
                 return NotFound("Hotel not found.");
 
-            // Remove associated images
-            _context.HotelImages.RemoveRange(hotelToDelete.HotelImages);
+            // 🔹 Ensure only the owner can delete
+            if (!Guid.TryParse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value, out var ownerID) || hotelToDelete.OwnerID != ownerID)
+                return Forbid("You are not authorized to delete this hotel.");
 
-            // Remove hotel
+            _context.HotelImages.RemoveRange(hotelToDelete.HotelImages);
             _context.Hotels.Remove(hotelToDelete);
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
-        // Simple API Ping Test
+        // ✅ API Health Check
         [HttpGet("Ping")]
-        public IActionResult Ping()
-        {
-            return Ok("Pong! API is responding.");
-        }
+        public IActionResult Ping() => Ok("Pong! API is responding.");
 
-        // 🔹 Private method to save image to server
-        private async Task<string> SaveImage(IFormFile file)
+        // 🔹 Save Image to Server
+        private static async Task<string> SaveImage(IFormFile file)
         {
             var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images");
-            if (!Directory.Exists(uploadsFolder))
-                Directory.CreateDirectory(uploadsFolder);
+            Directory.CreateDirectory(uploadsFolder);
 
             var filePath = Path.Combine(uploadsFolder, $"{Guid.NewGuid()}_{file.FileName}");
-            using (var fileStream = new FileStream(filePath, FileMode.Create))
-            {
-                await file.CopyToAsync(fileStream);
-            }
+            await using var fileStream = new FileStream(filePath, FileMode.Create);
+            await file.CopyToAsync(fileStream);
 
-            return filePath;
+            return "/images/" + Path.GetFileName(filePath);
         }
     }
 }

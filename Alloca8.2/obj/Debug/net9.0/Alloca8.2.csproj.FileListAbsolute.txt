@@ -1,5 +1,6 @@
 C:\Users\pc\source\repos\Alloca8.2\Alloca8.2\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\pc\source\repos\Alloca8.2\Alloca8.2\bin\Debug\net9.0\appsettings.json
+C:\Users\pc\source\repos\Alloca8.2\Alloca8.2\bin\Debug\net9.0\Alloca8.2.staticwebassets.runtime.json
 C:\Users\pc\source\repos\Alloca8.2\Alloca8.2\bin\Debug\net9.0\Alloca8.2.staticwebassets.endpoints.json
 C:\Users\pc\source\repos\Alloca8.2\Alloca8.2\bin\Debug\net9.0\Alloca8.2.exe
 C:\Users\pc\source\repos\Alloca8.2\Alloca8.2\bin\Debug\net9.0\Alloca8.2.deps.json
@@ -140,6 +141,7 @@ C:\Users\pc\source\repos\Alloca8.2\Alloca8.2\obj\Debug\net9.0\Alloca8.2.Assembly
 C:\Users\pc\source\repos\Alloca8.2\Alloca8.2\obj\Debug\net9.0\Alloca8.2.csproj.CoreCompileInputs.cache
 C:\Users\pc\source\repos\Alloca8.2\Alloca8.2\obj\Debug\net9.0\Alloca8.2.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\pc\source\repos\Alloca8.2\Alloca8.2\obj\Debug\net9.0\Alloca8.2.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\pc\source\repos\Alloca8.2\Alloca8.2\obj\Debug\net9.0\Alloca8.2.sourcelink.json
 C:\Users\pc\source\repos\Alloca8.2\Alloca8.2\obj\Debug\net9.0\scopedcss\bundle\Alloca8.2.styles.css
 C:\Users\pc\source\repos\Alloca8.2\Alloca8.2\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\pc\source\repos\Alloca8.2\Alloca8.2\obj\Debug\net9.0\staticwebassets.development.json
@@ -156,4 +158,3 @@ C:\Users\pc\source\repos\Alloca8.2\Alloca8.2\obj\Debug\net9.0\refint\Alloca8.2.d
 C:\Users\pc\source\repos\Alloca8.2\Alloca8.2\obj\Debug\net9.0\Alloca8.2.pdb
 C:\Users\pc\source\repos\Alloca8.2\Alloca8.2\obj\Debug\net9.0\Alloca8.2.genruntimeconfig.cache
 C:\Users\pc\source\repos\Alloca8.2\Alloca8.2\obj\Debug\net9.0\ref\Alloca8.2.dll
-C:\Users\pc\source\repos\Alloca8.2\Alloca8.2\obj\Debug\net9.0\Alloca8.2.sourcelink.json

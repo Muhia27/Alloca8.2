@@ -21,19 +21,26 @@ namespace Alloca8._2.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Hotels>()
+             .HasOne(h => h.HotelOwner)
+              .WithMany(u => u.Hotels)
+             .HasForeignKey(h => h.UserId) // Changed to UserId
+             .OnDelete(DeleteBehavior.Cascade);
 
-            // HotelImages relationships
+
             modelBuilder.Entity<HotelImages>()
                 .HasOne(h => h.Hotel)
                 .WithMany(h => h.HotelImages)
                 .HasForeignKey(h => h.HotelID)
-                .OnDelete(DeleteBehavior.Cascade); // Deleting a hotel deletes its images
+                .OnDelete(DeleteBehavior.NoAction); // ❌ No Cascade Delete for Hotel
 
             modelBuilder.Entity<HotelImages>()
                 .HasOne(h => h.Room)
                 .WithMany(r => r.RoomImages)
                 .HasForeignKey(h => h.RoomID)
-                .OnDelete(DeleteBehavior.SetNull); // If a room is deleted, keep the image
+                .OnDelete(DeleteBehavior.SetNull); // ✅ Keep RoomID as NULL if Room is deleted
         }
+
+
     }
 }

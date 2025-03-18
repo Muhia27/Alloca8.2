@@ -5,10 +5,9 @@ using System.ComponentModel.DataAnnotations;
 public class HotelImages
 {
     [Key]
-    public Guid ImageID { get; set; }
+    public Guid ImageID { get; set; } // This was previously int in the DB
 
     public Guid HotelID { get; set; }
-
     public Guid? RoomID { get; set; }
 
     public string ImagePath { get; set; } = string.Empty;

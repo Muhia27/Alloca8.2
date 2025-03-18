@@ -53,6 +53,15 @@ body {
 h1 {
     margin-bottom: 30px;
 }
+.success-message {
+    color: green;
+    margin-top: 10px;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
 
 
 

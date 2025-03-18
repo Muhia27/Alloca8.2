@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\Alloca8.2\\Alloca8.2\\wwwroot\\images\\096e9dc9-480b-4bec-bb4a-24b5df1620dd_213b459d-392f-44d1-bd86-f98f550eb450.jpeg",
+      "PackagePath": "staticwebassets\\images\\096e9dc9-480b-4bec-bb4a-24b5df1620dd_213b459d-392f-44d1-bd86-f98f550eb450.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\Alloca8.2\\Alloca8.2\\wwwroot\\images\\1df0f405-c990-43c8-8ea5-09db832086a4_213b459d-392f-44d1-bd86-f98f550eb450.jpeg",
+      "PackagePath": "staticwebassets\\images\\1df0f405-c990-43c8-8ea5-09db832086a4_213b459d-392f-44d1-bd86-f98f550eb450.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\Alloca8.2\\Alloca8.2\\wwwroot\\images\\65cb25ed-e20c-4531-aa53-099ae6c1f7f4_213b459d-392f-44d1-bd86-f98f550eb450.jpeg",
+      "PackagePath": "staticwebassets\\images\\65cb25ed-e20c-4531-aa53-099ae6c1f7f4_213b459d-392f-44d1-bd86-f98f550eb450.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\Alloca8.2\\Alloca8.2\\wwwroot\\images\\e8720f82-4456-4381-b074-e9300c9782d3_e386983b-7e93-469f-8199-4f42ea562d3b.jpeg",
+      "PackagePath": "staticwebassets\\images\\e8720f82-4456-4381-b074-e9300c9782d3_e386983b-7e93-469f-8199-4f42ea562d3b.jpeg"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.Alloca8.2.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.Alloca8.2.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.Alloca8.2.props",
+      "PackagePath": "build\\Alloca8.2.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.Alloca8.2.props",
+      "PackagePath": "buildMultiTargeting\\Alloca8.2.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.Alloca8.2.props",
+      "PackagePath": "buildTransitive\\Alloca8.2.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

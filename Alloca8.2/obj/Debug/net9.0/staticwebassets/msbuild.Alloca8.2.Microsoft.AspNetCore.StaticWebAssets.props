@@ -1,0 +1,76 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\096e9dc9-480b-4bec-bb4a-24b5df1620dd_213b459d-392f-44d1-bd86-f98f550eb450.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Alloca8.2</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Alloca8.2</BasePath>
+      <RelativePath>images/096e9dc9-480b-4bec-bb4a-24b5df1620dd_213b459d-392f-44d1-bd86-f98f550eb450.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>bya9lynauw</Fingerprint>
+      <Integrity>TXNewvtQznjIsN1zTTJTn/RAcEu+eKm0P9KX06vH+jw=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\096e9dc9-480b-4bec-bb4a-24b5df1620dd_213b459d-392f-44d1-bd86-f98f550eb450.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\1df0f405-c990-43c8-8ea5-09db832086a4_213b459d-392f-44d1-bd86-f98f550eb450.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Alloca8.2</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Alloca8.2</BasePath>
+      <RelativePath>images/1df0f405-c990-43c8-8ea5-09db832086a4_213b459d-392f-44d1-bd86-f98f550eb450.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>bya9lynauw</Fingerprint>
+      <Integrity>TXNewvtQznjIsN1zTTJTn/RAcEu+eKm0P9KX06vH+jw=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\1df0f405-c990-43c8-8ea5-09db832086a4_213b459d-392f-44d1-bd86-f98f550eb450.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\65cb25ed-e20c-4531-aa53-099ae6c1f7f4_213b459d-392f-44d1-bd86-f98f550eb450.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Alloca8.2</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Alloca8.2</BasePath>
+      <RelativePath>images/65cb25ed-e20c-4531-aa53-099ae6c1f7f4_213b459d-392f-44d1-bd86-f98f550eb450.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>bya9lynauw</Fingerprint>
+      <Integrity>TXNewvtQznjIsN1zTTJTn/RAcEu+eKm0P9KX06vH+jw=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\65cb25ed-e20c-4531-aa53-099ae6c1f7f4_213b459d-392f-44d1-bd86-f98f550eb450.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\e8720f82-4456-4381-b074-e9300c9782d3_e386983b-7e93-469f-8199-4f42ea562d3b.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Alloca8.2</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Alloca8.2</BasePath>
+      <RelativePath>images/e8720f82-4456-4381-b074-e9300c9782d3_e386983b-7e93-469f-8199-4f42ea562d3b.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>3p704oygj7</Fingerprint>
+      <Integrity>9yq57mQmIdsyX9xlLrwISIiO3xLQT64ZiiQ2VmHlRNo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\e8720f82-4456-4381-b074-e9300c9782d3_e386983b-7e93-469f-8199-4f42ea562d3b.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+  </ItemGroup>
+</Project>

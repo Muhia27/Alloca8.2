@@ -29,14 +29,20 @@
             <br /><br />
             <button type="submit" id="Signup-button">Register Hotel</button>
         </form>
-        
-    </div>
 
+        <div id="message-container">
+        </div>
+
+        <p>Already have an account? <a href="Sign In.html">Sign In</a></p>
+        <p><a href="../Sign/Sign.html">Join as: </a></p>
+    </div>
     <script>
         // Select the location input field and character count display
         const locationInput = document.getElementById('locationInput');
         const charCount = document.getElementById('charCount');
         const maxLength = 20;
+        const messageContainer = document.getElementById('message-container');
+        const hotelForm = document.getElementById('hotelForm');
 
         locationInput.addEventListener('input', function () {
             let currentLength = this.value.length;
@@ -48,34 +54,56 @@
         });
 
         // Hotel Registration Form Submission
-        document.getElementById('hotelForm').addEventListener('submit', function (event) {
+        hotelForm.addEventListener('submit', async function (event) {
             event.preventDefault();
 
             const formData = new FormData(this);
-            const ownerID = localStorage.getItem('ownerID'); // Get ownerID from localStorage
+            
 
-            if (!ownerID) {
-                alert('Owner ID not found. Please sign up or sign in.');
-                return;
-            }
+            try {
+                const token = localStorage.getItem('token');
+                if (!token) {
+                    displayMessage('error', 'Authentication token not found. Please sign in again.');
+                    return;
+                }
 
-            formData.append('ownerID', ownerID); // Add ownerID to form data
-
-            fetch('http://localhost:5056/api/AddHotel/AddHotel', { 
-                method: 'POST',
-                body: formData
-            })
-                .then(response => response.json())
-                .then(data => {
-                    console.log('Success:', data);
-                    alert('Hotel registered successfully!');
-                    document.getElementById('hotelForm').reset();
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                    alert('An error occurred while registering the hotel.');
+                const response = await fetch('http://localhost:5056/api/AddHotel/AddHotel', {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': `Bearer ${token}` // Include the JWT token
+                    },
+                    body: formData
                 });
+
+                if (response.ok) {
+                    const data = await response.json();
+                    console.log('Success:', data);
+                    displayMessage('success', 'Hotel registered successfully!');
+                    hotelForm.reset();
+
+                } else {
+                    const error = await response.json();
+                    console.error('Error:', error);
+                    displayMessage('error', `Hotel registration failed: ${error.message || response.statusText}`);
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                displayMessage('error', 'An error occurred while registering the hotel.');
+            }
         });
+
+        function displayMessage(type, message) {
+            messageContainer.innerHTML = ''; // Clear previous messages
+            const messageDiv = document.createElement('div');
+            messageDiv.textContent = message;
+            if (type === 'success') {
+                messageDiv.className = 'success-message';
+            } else if (type === 'error') {
+                messageDiv.className = 'error-message';
+            }
+            messageContainer.appendChild(messageDiv);
+        }
     </script>
+
 </body>
 </html>

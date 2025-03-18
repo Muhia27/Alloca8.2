@@ -78,6 +78,12 @@ namespace Alloca8._2.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsFeatured")
+                        .HasColumnType("bit");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -506,7 +512,7 @@ namespace Alloca8._2.Migrations
                     b.HasOne("Alloca8._2.Models.Entities.Hotels", "Hotel")
                         .WithMany("HotelImages")
                         .HasForeignKey("HotelID")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.HasOne("Alloca8._2.Models.Entities.Rooms", "Room")
