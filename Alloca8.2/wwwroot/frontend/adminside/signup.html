@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Hotel Owner Sign UP</title>
+    <link rel="stylesheet" href="AdminSide.css" />
+</head>
+<body>
+    <script src="../api.js"></script>
+    <div class="container">
+        <h1>Hotel Owner Sign Up</h1>
+        <div class="form-container">
+            <input type="text" placeholder="UserName" class="form-input" id="username" required />
+            <input type="email" placeholder="Email" class="form-input" id="email" required />
+            <input type="password" placeholder="Password" class="form-input" id="password" required />
+            <button id="Signup-button">Sign Up</button>
+            <p>Already have an account? <a href="signin.html">signin</a></p>
+            <p><a href="../sign/sign.html">Join as: </a></p>
+        </div>
+    </div>
+    <script>
+        document.getElementById("Signup-button").addEventListener("click", async () => {
+            const userName = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const role = parseInt(localStorage.getItem('selectedRoleValue'));//Get integer Role value
+
+            if (isNaN(role)) {
+                alert('Role not selected or invalid. Redirecting to selection page...');
+                window.location.href = '../sign/sign.html';
+                return;
+            }
+
+            const registrationData = {
+                UserName: userName, // Corrected field name
+                Email: email, // Corrected field name
+                Password: password, // Corrected field name
+                Role:role //use the parsed integer role
+            };
+
+            try {
+                const response = await fetch('http://localhost:5056/api/Users/register', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(registrationData)
+                });
+
+                if (response.ok) {
+                    const registrationResult = await response.json();
+                    alert(registrationResult.message);
+                    // Immediately attempt login
+                    const loginData = {
+                        Email: email,
+                        Password: password
+                    };
+
+                    const loginResponse = await fetch('http://localhost:5056/api/Users/login', { // Corrected URL
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(loginData)
+                    });
+
+                    if (loginResponse.ok) {
+                        const loginResult = await loginResponse.json();
+                        localStorage.setItem('token', loginResult.token);
+                        localStorage.setItem('userId', loginResult.userId);
+                        localStorage.setItem('userRole', loginResult.role);
+                        window.location.href = 'hotelregistration.html'; // Redirect to register hotel
+                    } else {
+                        const loginError = await loginResponse.json();
+                        alert('Registration successful, but login failed: ' + (loginError.message || loginResponse.statusText));
+                    }
+
+                } else {
+                    const error = await response.json();
+                    alert('Registration failed: ' + (error.message || response.statusText));
+                }
+
+            } catch (error) {
+                console.error('Error during registration:', error);
+                alert('An error occurred during registration. Please try again.');
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const role = localStorage.getItem('selectedRole');
+            if (!role) {
+                alert('Role not selected. Redirecting to selection page...');
+                window.location.href = '../sign/sign.html';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -12,7 +12,7 @@
             <input type="email" placeholder="Email" class="form-input" />
             <input type="password" placeholder="Password" class="form-input" />
             <button id="Signin-button">Sign In</button>
-            <p>Don't have an account? <a href="Sign Up.html">Sign Up</a></p>
+            <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
         </div>
     </div>
 
@@ -32,7 +32,7 @@
 
                 if (response.ok) {
                     localStorage.setItem('token', result.token);
-                    localStorage.setItem('ownerID', result.ownerID);
+                    localStorage.setItem('UserId', result.UserId);
                     localStorage.setItem('role', result.role);
                     localStorage.setItem('userName', result.userName); // Store userName upon login
 

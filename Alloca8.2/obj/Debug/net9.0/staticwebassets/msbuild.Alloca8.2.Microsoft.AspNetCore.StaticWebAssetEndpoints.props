@@ -1,5 +1,353 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/adminside/addhotel.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\adminside\addhotel.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Tlu8R096NJQ2HeiGENc54lLcKEIA5njKQIOG9lpfue4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2742"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022Tlu8R096NJQ2HeiGENc54lLcKEIA5njKQIOG9lpfue4=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 21:16:41 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/adminside/addhotel.yz0pqs8r5y.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\adminside\addhotel.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"yz0pqs8r5y"},{"Name":"integrity","Value":"sha256-Tlu8R096NJQ2HeiGENc54lLcKEIA5njKQIOG9lpfue4="},{"Name":"label","Value":"_content/Alloca8.2/frontend/adminside/addhotel.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2742"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022Tlu8R096NJQ2HeiGENc54lLcKEIA5njKQIOG9lpfue4=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 21:16:41 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/adminside/Admin.3r8b2a0bt1.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\adminside\Admin.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"3r8b2a0bt1"},{"Name":"integrity","Value":"sha256-8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U="},{"Name":"label","Value":"_content/Alloca8.2/frontend/adminside/Admin.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00228ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 21:16:41 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/adminside/Admin.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\adminside\Admin.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00228ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 21:16:41 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/adminside/AdminSide.avzkhxhlkj.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\adminside\AdminSide.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"avzkhxhlkj"},{"Name":"integrity","Value":"sha256-lhe92rNDB65r\u002BCB2oG/hkjCSlW0Hk9AszzlorJgvxvM="},{"Name":"label","Value":"_content/Alloca8.2/frontend/adminside/AdminSide.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1072"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022lhe92rNDB65r\u002BCB2oG/hkjCSlW0Hk9AszzlorJgvxvM=\u0022"},{"Name":"Last-Modified","Value":"Tue, 18 Mar 2025 05:19:32 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/adminside/AdminSide.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\adminside\AdminSide.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-lhe92rNDB65r\u002BCB2oG/hkjCSlW0Hk9AszzlorJgvxvM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1072"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022lhe92rNDB65r\u002BCB2oG/hkjCSlW0Hk9AszzlorJgvxvM=\u0022"},{"Name":"Last-Modified","Value":"Tue, 18 Mar 2025 05:19:32 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/adminside/Dashboard.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\adminside\Dashboard.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ap/JmS1jEkBHOqEfyBbXP2FFe0fPWWiECbEfAp56M4U="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2079"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ap/JmS1jEkBHOqEfyBbXP2FFe0fPWWiECbEfAp56M4U=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 21:16:41 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/adminside/Dashboard.mhb5640yhf.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\adminside\Dashboard.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"mhb5640yhf"},{"Name":"integrity","Value":"sha256-ap/JmS1jEkBHOqEfyBbXP2FFe0fPWWiECbEfAp56M4U="},{"Name":"label","Value":"_content/Alloca8.2/frontend/adminside/Dashboard.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2079"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ap/JmS1jEkBHOqEfyBbXP2FFe0fPWWiECbEfAp56M4U=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 21:16:41 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/adminside/hotelregistration.2nruq3a24b.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\adminside\hotelregistration.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"2nruq3a24b"},{"Name":"integrity","Value":"sha256-bk1zdgC51EcRwsWhIrY3hMO4pQ9/pWMY/FWVE6djtNs="},{"Name":"label","Value":"_content/Alloca8.2/frontend/adminside/hotelregistration.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4482"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022bk1zdgC51EcRwsWhIrY3hMO4pQ9/pWMY/FWVE6djtNs=\u0022"},{"Name":"Last-Modified","Value":"Tue, 18 Mar 2025 21:41:49 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/adminside/hotelregistration.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\adminside\hotelregistration.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-bk1zdgC51EcRwsWhIrY3hMO4pQ9/pWMY/FWVE6djtNs="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4482"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022bk1zdgC51EcRwsWhIrY3hMO4pQ9/pWMY/FWVE6djtNs=\u0022"},{"Name":"Last-Modified","Value":"Tue, 18 Mar 2025 21:41:49 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/adminside/hotels.6lubag71qj.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\adminside\hotels.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"6lubag71qj"},{"Name":"integrity","Value":"sha256-ZlYvFk11Vp23Cb4bGnNqZhN\u002BGeJL598TXfGHpeNK5I0="},{"Name":"label","Value":"_content/Alloca8.2/frontend/adminside/hotels.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1310"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022ZlYvFk11Vp23Cb4bGnNqZhN\u002BGeJL598TXfGHpeNK5I0=\u0022"},{"Name":"Last-Modified","Value":"Wed, 19 Mar 2025 10:02:49 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/adminside/hotels.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\adminside\hotels.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ZlYvFk11Vp23Cb4bGnNqZhN\u002BGeJL598TXfGHpeNK5I0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1310"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022ZlYvFk11Vp23Cb4bGnNqZhN\u002BGeJL598TXfGHpeNK5I0=\u0022"},{"Name":"Last-Modified","Value":"Wed, 19 Mar 2025 10:02:49 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/adminside/index.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\adminside\index.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-NPcQHxqFgU5ObYEj3OHNrFS6qdAv1k/BR4k64fNxTd8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2486"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022NPcQHxqFgU5ObYEj3OHNrFS6qdAv1k/BR4k64fNxTd8=\u0022"},{"Name":"Last-Modified","Value":"Wed, 19 Mar 2025 10:03:41 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/adminside/index.si98lgactm.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\adminside\index.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"si98lgactm"},{"Name":"integrity","Value":"sha256-NPcQHxqFgU5ObYEj3OHNrFS6qdAv1k/BR4k64fNxTd8="},{"Name":"label","Value":"_content/Alloca8.2/frontend/adminside/index.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2486"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022NPcQHxqFgU5ObYEj3OHNrFS6qdAv1k/BR4k64fNxTd8=\u0022"},{"Name":"Last-Modified","Value":"Wed, 19 Mar 2025 10:03:41 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/adminside/signin.dtx7dgbay8.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\adminside\signin.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"dtx7dgbay8"},{"Name":"integrity","Value":"sha256-8UMD3dc6xzQNjbWCxZ5jiNPbgE3idAmAyAbuiFHDjMg="},{"Name":"label","Value":"_content/Alloca8.2/frontend/adminside/signin.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2061"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u00228UMD3dc6xzQNjbWCxZ5jiNPbgE3idAmAyAbuiFHDjMg=\u0022"},{"Name":"Last-Modified","Value":"Wed, 19 Mar 2025 10:03:59 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/adminside/signin.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\adminside\signin.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-8UMD3dc6xzQNjbWCxZ5jiNPbgE3idAmAyAbuiFHDjMg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2061"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u00228UMD3dc6xzQNjbWCxZ5jiNPbgE3idAmAyAbuiFHDjMg=\u0022"},{"Name":"Last-Modified","Value":"Wed, 19 Mar 2025 10:03:59 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/adminside/signup.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\adminside\signup.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-QtGc6HXXf74sv4v/jxJ53Qo2Q60DAJM0B3FyibY1yDk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4330"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022QtGc6HXXf74sv4v/jxJ53Qo2Q60DAJM0B3FyibY1yDk=\u0022"},{"Name":"Last-Modified","Value":"Thu, 20 Mar 2025 19:58:28 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/adminside/signup.upmhsq8u2m.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\adminside\signup.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"upmhsq8u2m"},{"Name":"integrity","Value":"sha256-QtGc6HXXf74sv4v/jxJ53Qo2Q60DAJM0B3FyibY1yDk="},{"Name":"label","Value":"_content/Alloca8.2/frontend/adminside/signup.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4330"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022QtGc6HXXf74sv4v/jxJ53Qo2Q60DAJM0B3FyibY1yDk=\u0022"},{"Name":"Last-Modified","Value":"Thu, 20 Mar 2025 19:58:28 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/api.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\api.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-9OZ4UEKJW3V1SZUKET/Zra/h4sFL/Y8DY5ji\u002BNNwY1A="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2197"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00229OZ4UEKJW3V1SZUKET/Zra/h4sFL/Y8DY5ji\u002BNNwY1A=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 21:39:43 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/api.wlmetgwsgj.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\api.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"wlmetgwsgj"},{"Name":"integrity","Value":"sha256-9OZ4UEKJW3V1SZUKET/Zra/h4sFL/Y8DY5ji\u002BNNwY1A="},{"Name":"label","Value":"_content/Alloca8.2/frontend/api.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2197"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00229OZ4UEKJW3V1SZUKET/Zra/h4sFL/Y8DY5ji\u002BNNwY1A=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 21:39:43 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/sign/Sign.3r8b2a0bt1.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\sign\Sign.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"3r8b2a0bt1"},{"Name":"integrity","Value":"sha256-8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U="},{"Name":"label","Value":"_content/Alloca8.2/frontend/sign/Sign.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00228ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 21:16:41 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/sign/sign.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\sign\sign.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-CD0bssI9XY/hr5vLN9wYuMcS4OyLhF\u002BlOIgHAW6mtCE="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"944"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022CD0bssI9XY/hr5vLN9wYuMcS4OyLhF\u002BlOIgHAW6mtCE=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 21:16:41 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/sign/sign.gq4w3kj0uk.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\sign\sign.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"gq4w3kj0uk"},{"Name":"integrity","Value":"sha256-CD0bssI9XY/hr5vLN9wYuMcS4OyLhF\u002BlOIgHAW6mtCE="},{"Name":"label","Value":"_content/Alloca8.2/frontend/sign/sign.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"944"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022CD0bssI9XY/hr5vLN9wYuMcS4OyLhF\u002BlOIgHAW6mtCE=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 21:16:41 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/sign/sign.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\sign\sign.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-mk2WqTuhOlz1ecB8eJghPTC/cNWXwxDr77u4ly5ROY8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1967"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022mk2WqTuhOlz1ecB8eJghPTC/cNWXwxDr77u4ly5ROY8=\u0022"},{"Name":"Last-Modified","Value":"Thu, 20 Mar 2025 19:53:58 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/sign/sign.idwagocb3l.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\sign\sign.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"idwagocb3l"},{"Name":"integrity","Value":"sha256-mk2WqTuhOlz1ecB8eJghPTC/cNWXwxDr77u4ly5ROY8="},{"Name":"label","Value":"_content/Alloca8.2/frontend/sign/sign.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1967"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022mk2WqTuhOlz1ecB8eJghPTC/cNWXwxDr77u4ly5ROY8=\u0022"},{"Name":"Last-Modified","Value":"Thu, 20 Mar 2025 19:53:58 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/sign/Sign.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\sign\Sign.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00228ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 21:16:41 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/userside/about.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\userside\about.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-vp9Vkn7hYtpTSmV5xJXv6epAE\u002Bi/2c4oCsn5ez0YNfg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"122"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022vp9Vkn7hYtpTSmV5xJXv6epAE\u002Bi/2c4oCsn5ez0YNfg=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 21:16:41 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/userside/about.m6t8iqaf5f.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\userside\about.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"m6t8iqaf5f"},{"Name":"integrity","Value":"sha256-vp9Vkn7hYtpTSmV5xJXv6epAE\u002Bi/2c4oCsn5ez0YNfg="},{"Name":"label","Value":"_content/Alloca8.2/frontend/userside/about.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"122"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022vp9Vkn7hYtpTSmV5xJXv6epAE\u002Bi/2c4oCsn5ez0YNfg=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 21:16:41 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/userside/hotels.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\userside\hotels.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-T0bM0MGzI0H8aGGYhcGBGyPhzsG4PaXfKblvVCSMZXo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3283"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022T0bM0MGzI0H8aGGYhcGBGyPhzsG4PaXfKblvVCSMZXo=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 21:16:41 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/userside/hotels.x4wo1wme5r.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\userside\hotels.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"x4wo1wme5r"},{"Name":"integrity","Value":"sha256-T0bM0MGzI0H8aGGYhcGBGyPhzsG4PaXfKblvVCSMZXo="},{"Name":"label","Value":"_content/Alloca8.2/frontend/userside/hotels.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3283"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022T0bM0MGzI0H8aGGYhcGBGyPhzsG4PaXfKblvVCSMZXo=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 21:16:41 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/userside/images/37 Lavish Luxury Villas.gsqw9mmg0n.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\userside\images\37 Lavish Luxury Villas.jpeg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"gsqw9mmg0n"},{"Name":"integrity","Value":"sha256-YI88N9csKC\u002BPPBaJ2Z/AcBtbbRRtFxyW25IqjVdjmBo="},{"Name":"label","Value":"_content/Alloca8.2/frontend/userside/images/37 Lavish Luxury Villas.jpeg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"206280"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YI88N9csKC\u002BPPBaJ2Z/AcBtbbRRtFxyW25IqjVdjmBo=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 21:16:42 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/userside/images/37 Lavish Luxury Villas.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\userside\images\37 Lavish Luxury Villas.jpeg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-YI88N9csKC\u002BPPBaJ2Z/AcBtbbRRtFxyW25IqjVdjmBo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"206280"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022YI88N9csKC\u002BPPBaJ2Z/AcBtbbRRtFxyW25IqjVdjmBo=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 21:16:42 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/userside/images/6803cd77-6ad0-4d36-b6ce-53db22183c74.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\userside\images\6803cd77-6ad0-4d36-b6ce-53db22183c74.jpeg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-zORjHEe\u002B19CEsMe1vsT3HCpcXWDmzrhpfL7pBD3nltk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"96965"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022zORjHEe\u002B19CEsMe1vsT3HCpcXWDmzrhpfL7pBD3nltk=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 21:16:42 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/userside/images/6803cd77-6ad0-4d36-b6ce-53db22183c74.o3zi51lmyb.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\userside\images\6803cd77-6ad0-4d36-b6ce-53db22183c74.jpeg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"o3zi51lmyb"},{"Name":"integrity","Value":"sha256-zORjHEe\u002B19CEsMe1vsT3HCpcXWDmzrhpfL7pBD3nltk="},{"Name":"label","Value":"_content/Alloca8.2/frontend/userside/images/6803cd77-6ad0-4d36-b6ce-53db22183c74.jpeg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"96965"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022zORjHEe\u002B19CEsMe1vsT3HCpcXWDmzrhpfL7pBD3nltk=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 21:16:42 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/userside/images/b3331088-e170-43ff-98d9-b7a4416884f3.26w2m6g70t.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\userside\images\b3331088-e170-43ff-98d9-b7a4416884f3.jpeg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"26w2m6g70t"},{"Name":"integrity","Value":"sha256-Wn0\u002BuVTq4iFSzlgQDf5w3HNF2CPhTKWfo7OnA7OgSow="},{"Name":"label","Value":"_content/Alloca8.2/frontend/userside/images/b3331088-e170-43ff-98d9-b7a4416884f3.jpeg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"91157"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022Wn0\u002BuVTq4iFSzlgQDf5w3HNF2CPhTKWfo7OnA7OgSow=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 21:16:42 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/userside/images/b3331088-e170-43ff-98d9-b7a4416884f3.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\userside\images\b3331088-e170-43ff-98d9-b7a4416884f3.jpeg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Wn0\u002BuVTq4iFSzlgQDf5w3HNF2CPhTKWfo7OnA7OgSow="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"91157"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022Wn0\u002BuVTq4iFSzlgQDf5w3HNF2CPhTKWfo7OnA7OgSow=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 21:16:42 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/userside/images/Gallery of Naz City Hotel Taksim _ Metex Design Group  - 1.709ae7ydhr.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\userside\images\Gallery of Naz City Hotel Taksim _ Metex Design Group  - 1.jpeg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"709ae7ydhr"},{"Name":"integrity","Value":"sha256-6QlhIjqKI7WaPoItPKH/E9qpyAdxEaPSvc5PHCZezdo="},{"Name":"label","Value":"_content/Alloca8.2/frontend/userside/images/Gallery of Naz City Hotel Taksim _ Metex Design Group  - 1.jpeg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"170665"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00226QlhIjqKI7WaPoItPKH/E9qpyAdxEaPSvc5PHCZezdo=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 21:16:42 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/userside/images/Gallery of Naz City Hotel Taksim _ Metex Design Group  - 1.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\userside\images\Gallery of Naz City Hotel Taksim _ Metex Design Group  - 1.jpeg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-6QlhIjqKI7WaPoItPKH/E9qpyAdxEaPSvc5PHCZezdo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"170665"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00226QlhIjqKI7WaPoItPKH/E9qpyAdxEaPSvc5PHCZezdo=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 21:16:42 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/userside/images/myhotel.0cs76iuexn.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\userside\images\myhotel.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"0cs76iuexn"},{"Name":"integrity","Value":"sha256-MDm3bCfzfpAh1O/KSTEDkE0BT5tSNTRnq3hBZ/9w4ao="},{"Name":"label","Value":"_content/Alloca8.2/frontend/userside/images/myhotel.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4938542"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022MDm3bCfzfpAh1O/KSTEDkE0BT5tSNTRnq3hBZ/9w4ao=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 21:16:42 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/userside/images/myhotel.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\userside\images\myhotel.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-MDm3bCfzfpAh1O/KSTEDkE0BT5tSNTRnq3hBZ/9w4ao="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"4938542"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022MDm3bCfzfpAh1O/KSTEDkE0BT5tSNTRnq3hBZ/9w4ao=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 21:16:42 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/userside/images/Panari.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\userside\images\Panari.jpeg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-gcB/U9zbFrliXGn9w2zx7gVlPOASDbhqs1hnil1VXjU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"12110"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022gcB/U9zbFrliXGn9w2zx7gVlPOASDbhqs1hnil1VXjU=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 21:16:42 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/userside/images/Panari.x4xntv2e41.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\userside\images\Panari.jpeg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"x4xntv2e41"},{"Name":"integrity","Value":"sha256-gcB/U9zbFrliXGn9w2zx7gVlPOASDbhqs1hnil1VXjU="},{"Name":"label","Value":"_content/Alloca8.2/frontend/userside/images/Panari.jpeg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"12110"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022gcB/U9zbFrliXGn9w2zx7gVlPOASDbhqs1hnil1VXjU=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 21:16:42 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/userside/images/Pullman Jakarta Central Park hotel review.4f7qjckoil.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\userside\images\Pullman Jakarta Central Park hotel review.jpeg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"4f7qjckoil"},{"Name":"integrity","Value":"sha256-EIsSetzAjOdscsJ2aEjneCPK\u002BUxeiT7NG2RiUPtSowY="},{"Name":"label","Value":"_content/Alloca8.2/frontend/userside/images/Pullman Jakarta Central Park hotel review.jpeg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"125754"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022EIsSetzAjOdscsJ2aEjneCPK\u002BUxeiT7NG2RiUPtSowY=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 21:16:42 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/userside/images/Pullman Jakarta Central Park hotel review.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\userside\images\Pullman Jakarta Central Park hotel review.jpeg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-EIsSetzAjOdscsJ2aEjneCPK\u002BUxeiT7NG2RiUPtSowY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"125754"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022EIsSetzAjOdscsJ2aEjneCPK\u002BUxeiT7NG2RiUPtSowY=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 21:16:42 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/userside/images/The 8 best hotels in Mexico where the interior design is even better than the weather.eyuxbg8jr1.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\userside\images\The 8 best hotels in Mexico where the interior design is even better than the weather.jpeg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"eyuxbg8jr1"},{"Name":"integrity","Value":"sha256-9oXibjvngdlYBZhXxaQLXaDf/Jc9eC\u002BwvSsdbGsl9Ts="},{"Name":"label","Value":"_content/Alloca8.2/frontend/userside/images/The 8 best hotels in Mexico where the interior design is even better than the weather.jpeg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"137568"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00229oXibjvngdlYBZhXxaQLXaDf/Jc9eC\u002BwvSsdbGsl9Ts=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 21:16:42 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/userside/images/The 8 best hotels in Mexico where the interior design is even better than the weather.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\userside\images\The 8 best hotels in Mexico where the interior design is even better than the weather.jpeg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-9oXibjvngdlYBZhXxaQLXaDf/Jc9eC\u002BwvSsdbGsl9Ts="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"137568"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00229oXibjvngdlYBZhXxaQLXaDf/Jc9eC\u002BwvSsdbGsl9Ts=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 21:16:42 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/userside/index.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\userside\index.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-qUvdFKCEVps5nzsYw7zhu2wbyOTnNHgjteWoODGufFk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3470"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022qUvdFKCEVps5nzsYw7zhu2wbyOTnNHgjteWoODGufFk=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 21:16:42 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/userside/index.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\userside\index.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Ozbuv5j1YVnWjgs6lxUUUyUXhCnCCrdlV22UStoVTa8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1210"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022Ozbuv5j1YVnWjgs6lxUUUyUXhCnCCrdlV22UStoVTa8=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 21:16:42 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/userside/index.lcstlcvzhr.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\userside\index.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"lcstlcvzhr"},{"Name":"integrity","Value":"sha256-Ozbuv5j1YVnWjgs6lxUUUyUXhCnCCrdlV22UStoVTa8="},{"Name":"label","Value":"_content/Alloca8.2/frontend/userside/index.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1210"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022Ozbuv5j1YVnWjgs6lxUUUyUXhCnCCrdlV22UStoVTa8=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 21:16:42 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/userside/index.po3onn375p.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\userside\index.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"po3onn375p"},{"Name":"integrity","Value":"sha256-qUvdFKCEVps5nzsYw7zhu2wbyOTnNHgjteWoODGufFk="},{"Name":"label","Value":"_content/Alloca8.2/frontend/userside/index.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3470"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022qUvdFKCEVps5nzsYw7zhu2wbyOTnNHgjteWoODGufFk=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 21:16:42 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/userside/Sign In.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\userside\Sign In.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-kLhEURvNe6u6aNrQCGywgo/VLuWwMnQ54fbZn47iF\u002B4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"688"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022kLhEURvNe6u6aNrQCGywgo/VLuWwMnQ54fbZn47iF\u002B4=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 21:16:41 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/userside/Sign In.o6k1zak21l.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\userside\Sign In.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"o6k1zak21l"},{"Name":"integrity","Value":"sha256-kLhEURvNe6u6aNrQCGywgo/VLuWwMnQ54fbZn47iF\u002B4="},{"Name":"label","Value":"_content/Alloca8.2/frontend/userside/Sign In.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"688"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022kLhEURvNe6u6aNrQCGywgo/VLuWwMnQ54fbZn47iF\u002B4=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 21:16:41 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/userside/SignUp.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\userside\SignUp.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-nU\u002BRwM5NcFSm0F28bfHAhN8yM035zes14ZKUqYUKz\u002Bk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1967"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022nU\u002BRwM5NcFSm0F28bfHAhN8yM035zes14ZKUqYUKz\u002Bk=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 21:16:41 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/userside/SignUp.jglr3i2mnw.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\userside\SignUp.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"jglr3i2mnw"},{"Name":"integrity","Value":"sha256-nU\u002BRwM5NcFSm0F28bfHAhN8yM035zes14ZKUqYUKz\u002Bk="},{"Name":"label","Value":"_content/Alloca8.2/frontend/userside/SignUp.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1967"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022nU\u002BRwM5NcFSm0F28bfHAhN8yM035zes14ZKUqYUKz\u002Bk=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 21:16:41 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/userside/User.3r8b2a0bt1.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\userside\User.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"3r8b2a0bt1"},{"Name":"integrity","Value":"sha256-8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U="},{"Name":"label","Value":"_content/Alloca8.2/frontend/userside/User.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00228ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 21:16:41 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/userside/User.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\userside\User.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00228ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 21:16:41 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/userside/UserSide.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\userside\UserSide.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-r/QeLt0hfaYqnokyFYldLNalrkFxOMUsihHahJb59n0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"866"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022r/QeLt0hfaYqnokyFYldLNalrkFxOMUsihHahJb59n0=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 21:16:41 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Alloca8.2/frontend/userside/UserSide.nilv6oxlbm.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\frontend\userside\UserSide.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"nilv6oxlbm"},{"Name":"integrity","Value":"sha256-r/QeLt0hfaYqnokyFYldLNalrkFxOMUsihHahJb59n0="},{"Name":"label","Value":"_content/Alloca8.2/frontend/userside/UserSide.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"866"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022r/QeLt0hfaYqnokyFYldLNalrkFxOMUsihHahJb59n0=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 21:16:41 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Alloca8.2/images/096e9dc9-480b-4bec-bb4a-24b5df1620dd_213b459d-392f-44d1-bd86-f98f550eb450.bya9lynauw.jpeg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\096e9dc9-480b-4bec-bb4a-24b5df1620dd_213b459d-392f-44d1-bd86-f98f550eb450.jpeg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

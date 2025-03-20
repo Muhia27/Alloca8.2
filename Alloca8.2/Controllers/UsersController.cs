@@ -39,15 +39,14 @@ namespace Alloca8._2.Controllers
             {
                 UserName = registrationDto.UserName,
                 Email = registrationDto.Email,
-                Role = registrationDto.Role,
-                OwnerID = registrationDto.OwnerID 
+                Role = registrationDto.Role
             };
 
             var result = await _userManager.CreateAsync(user, registrationDto.Password);
 
             if (result.Succeeded)
             {
-                return Ok(new { Message = "User registered successfully", ownerID = user.OwnerID }); // Return ownerID
+                return Ok(new { Message = "User registered successfully", userId = user.Id }); // Return userId
             }
 
             return BadRequest(result.Errors);
@@ -72,7 +71,7 @@ namespace Alloca8._2.Controllers
                     {
                         var token = GenerateJwtToken(user);
                         Console.WriteLine($"JWT generated successfully.");
-                        return Ok(new { Token = token, OwnerID = user.OwnerID, Role = user.Role });
+                        return Ok(new { Token = token, UserId = user.Id, Role = user.Role }); // Return UserId
                     }
                     else
                     {

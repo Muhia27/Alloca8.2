@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Alloca8.2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e8795be592bb1545f04dacab3243fe84f73a6339")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+621c2ec81091d7f0b716960200d85af6a5122682")]
 [assembly: System.Reflection.AssemblyProductAttribute("Alloca8.2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Alloca8.2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

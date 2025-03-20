@@ -1,6 +1,122 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\pc\\source\\repos\\Alloca8.2\\Alloca8.2\\wwwroot\\frontend\\adminside\\Admin.js",
+      "PackagePath": "staticwebassets\\frontend\\adminside\\Admin.js"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\Alloca8.2\\Alloca8.2\\wwwroot\\frontend\\adminside\\AdminSide.css",
+      "PackagePath": "staticwebassets\\frontend\\adminside\\AdminSide.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\Alloca8.2\\Alloca8.2\\wwwroot\\frontend\\adminside\\Dashboard.css",
+      "PackagePath": "staticwebassets\\frontend\\adminside\\Dashboard.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\Alloca8.2\\Alloca8.2\\wwwroot\\frontend\\adminside\\addhotel.html",
+      "PackagePath": "staticwebassets\\frontend\\adminside\\addhotel.html"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\Alloca8.2\\Alloca8.2\\wwwroot\\frontend\\adminside\\hotelregistration.html",
+      "PackagePath": "staticwebassets\\frontend\\adminside\\hotelregistration.html"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\Alloca8.2\\Alloca8.2\\wwwroot\\frontend\\adminside\\hotels.html",
+      "PackagePath": "staticwebassets\\frontend\\adminside\\hotels.html"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\Alloca8.2\\Alloca8.2\\wwwroot\\frontend\\adminside\\index.html",
+      "PackagePath": "staticwebassets\\frontend\\adminside\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\Alloca8.2\\Alloca8.2\\wwwroot\\frontend\\adminside\\signin.html",
+      "PackagePath": "staticwebassets\\frontend\\adminside\\signin.html"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\Alloca8.2\\Alloca8.2\\wwwroot\\frontend\\adminside\\signup.html",
+      "PackagePath": "staticwebassets\\frontend\\adminside\\signup.html"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\Alloca8.2\\Alloca8.2\\wwwroot\\frontend\\api.js",
+      "PackagePath": "staticwebassets\\frontend\\api.js"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\Alloca8.2\\Alloca8.2\\wwwroot\\frontend\\sign\\Sign.js",
+      "PackagePath": "staticwebassets\\frontend\\sign\\Sign.js"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\Alloca8.2\\Alloca8.2\\wwwroot\\frontend\\sign\\sign.css",
+      "PackagePath": "staticwebassets\\frontend\\sign\\sign.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\Alloca8.2\\Alloca8.2\\wwwroot\\frontend\\sign\\sign.html",
+      "PackagePath": "staticwebassets\\frontend\\sign\\sign.html"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\Alloca8.2\\Alloca8.2\\wwwroot\\frontend\\userside\\Sign In.html",
+      "PackagePath": "staticwebassets\\frontend\\userside\\Sign In.html"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\Alloca8.2\\Alloca8.2\\wwwroot\\frontend\\userside\\SignUp.html",
+      "PackagePath": "staticwebassets\\frontend\\userside\\SignUp.html"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\Alloca8.2\\Alloca8.2\\wwwroot\\frontend\\userside\\User.js",
+      "PackagePath": "staticwebassets\\frontend\\userside\\User.js"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\Alloca8.2\\Alloca8.2\\wwwroot\\frontend\\userside\\UserSide.css",
+      "PackagePath": "staticwebassets\\frontend\\userside\\UserSide.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\Alloca8.2\\Alloca8.2\\wwwroot\\frontend\\userside\\about.html",
+      "PackagePath": "staticwebassets\\frontend\\userside\\about.html"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\Alloca8.2\\Alloca8.2\\wwwroot\\frontend\\userside\\hotels.html",
+      "PackagePath": "staticwebassets\\frontend\\userside\\hotels.html"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\Alloca8.2\\Alloca8.2\\wwwroot\\frontend\\userside\\images\\37 Lavish Luxury Villas.jpeg",
+      "PackagePath": "staticwebassets\\frontend\\userside\\images\\37 Lavish Luxury Villas.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\Alloca8.2\\Alloca8.2\\wwwroot\\frontend\\userside\\images\\6803cd77-6ad0-4d36-b6ce-53db22183c74.jpeg",
+      "PackagePath": "staticwebassets\\frontend\\userside\\images\\6803cd77-6ad0-4d36-b6ce-53db22183c74.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\Alloca8.2\\Alloca8.2\\wwwroot\\frontend\\userside\\images\\Gallery of Naz City Hotel Taksim _ Metex Design Group  - 1.jpeg",
+      "PackagePath": "staticwebassets\\frontend\\userside\\images\\Gallery of Naz City Hotel Taksim _ Metex Design Group  - 1.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\Alloca8.2\\Alloca8.2\\wwwroot\\frontend\\userside\\images\\Panari.jpeg",
+      "PackagePath": "staticwebassets\\frontend\\userside\\images\\Panari.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\Alloca8.2\\Alloca8.2\\wwwroot\\frontend\\userside\\images\\Pullman Jakarta Central Park hotel review.jpeg",
+      "PackagePath": "staticwebassets\\frontend\\userside\\images\\Pullman Jakarta Central Park hotel review.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\Alloca8.2\\Alloca8.2\\wwwroot\\frontend\\userside\\images\\The 8 best hotels in Mexico where the interior design is even better than the weather.jpeg",
+      "PackagePath": "staticwebassets\\frontend\\userside\\images\\The 8 best hotels in Mexico where the interior design is even better than the weather.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\Alloca8.2\\Alloca8.2\\wwwroot\\frontend\\userside\\images\\b3331088-e170-43ff-98d9-b7a4416884f3.jpeg",
+      "PackagePath": "staticwebassets\\frontend\\userside\\images\\b3331088-e170-43ff-98d9-b7a4416884f3.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\Alloca8.2\\Alloca8.2\\wwwroot\\frontend\\userside\\images\\myhotel.jpg",
+      "PackagePath": "staticwebassets\\frontend\\userside\\images\\myhotel.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\Alloca8.2\\Alloca8.2\\wwwroot\\frontend\\userside\\index.css",
+      "PackagePath": "staticwebassets\\frontend\\userside\\index.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\Alloca8.2\\Alloca8.2\\wwwroot\\frontend\\userside\\index.html",
+      "PackagePath": "staticwebassets\\frontend\\userside\\index.html"
+    },
+    {
       "Id": "C:\\Users\\pc\\source\\repos\\Alloca8.2\\Alloca8.2\\wwwroot\\images\\096e9dc9-480b-4bec-bb4a-24b5df1620dd_213b459d-392f-44d1-bd86-f98f550eb450.jpeg",
       "PackagePath": "staticwebassets\\images\\096e9dc9-480b-4bec-bb4a-24b5df1620dd_213b459d-392f-44d1-bd86-f98f550eb450.jpeg"
     },

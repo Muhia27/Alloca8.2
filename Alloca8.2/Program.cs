@@ -18,12 +18,12 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll",
-    policy =>
-    {
-        policy.AllowAnyOrigin()
-              .AllowAnyMethod()
-              .AllowAnyHeader();
-    });
+        policy =>
+        {
+            policy.AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader();
+        });
 });
 
 builder.Services.AddDbContext<Alloca8DbContext>(options =>
@@ -67,9 +67,14 @@ if (app.Environment.IsDevelopment())
 // Apply CORS before Authentication & Authorization
 app.UseCors("AllowAll");
 
+// Add Static Files Middleware
+app.UseStaticFiles();
+
+app.UseRouting(); // Add routing middleware
+
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapControllers();
+app.MapControllers(); // Map your controllers
 
 app.Run();

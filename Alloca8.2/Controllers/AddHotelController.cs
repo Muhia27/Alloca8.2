@@ -29,14 +29,14 @@ namespace Alloca8._2.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            // 🔹 Get OwnerID as GUID
-            if (!Guid.TryParse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value, out var ownerID))
+            // 🔹 Get UserId as GUID
+            if (!Guid.TryParse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value, out var userId))
                 return Unauthorized("User authentication failed.");
 
-            _logger.LogInformation("Authenticated OwnerID: {OwnerID}", ownerID);
+            _logger.LogInformation("Authenticated UserId: {UserId}", userId);
 
             // 🔹 Ensure User doesn't already own a hotel
-            if (await _context.Hotels.AnyAsync(h => h.OwnerID == ownerID))
+            if (await _context.Hotels.AnyAsync(h => h.UserId == userId))
                 return BadRequest("User already owns a hotel.");
 
             var newHotel = new Hotels
@@ -44,7 +44,7 @@ namespace Alloca8._2.Controllers
                 HotelID = Guid.NewGuid(),
                 Name = hotelDTO.Name,
                 Description = hotelDTO.Description,
-                OwnerID = ownerID,
+                UserId = userId, // Set UserId
                 CreateDate = DateTime.UtcNow,
                 IsFeatured = hotelDTO.IsFeatured,
                 IsActive = hotelDTO.IsActive
@@ -129,7 +129,7 @@ namespace Alloca8._2.Controllers
                 return NotFound("Hotel not found.");
 
             // 🔹 Ensure only the owner can delete
-            if (!Guid.TryParse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value, out var ownerID) || hotelToDelete.OwnerID != ownerID)
+            if (!Guid.TryParse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value, out var userId) || hotelToDelete.UserId != userId)
                 return Forbid("You are not authorized to delete this hotel.");
 
             _context.HotelImages.RemoveRange(hotelToDelete.HotelImages);

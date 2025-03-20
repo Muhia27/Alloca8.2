@@ -8,9 +8,9 @@ namespace Alloca8._2.Models.Entities
     public class Hotels
     {
         [Key]
-        public Guid UserId { get; set; }
+        public Guid HotelID { get; set; }
 
-    
+        public Guid UserId { get; set; } // Foreign key to Users table (Id)
 
         [Required] // Ensures name cannot be null
         public string Name { get; set; } = string.Empty;
@@ -21,10 +21,10 @@ namespace Alloca8._2.Models.Entities
 
         // NEW PROPERTIES
         public bool IsFeatured { get; set; } = false; // Default to not featured
-        public bool IsActive { get; set; } = true;   // Default to active
+        public bool IsActive { get; set; } = true;    // Default to active
 
         // Navigation Properties
-        [ForeignKey("UsersId")]
+        [ForeignKey("UserId")]
         public Users? HotelOwner { get; set; }
 
 

@@ -5,15 +5,15 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace Alloca8._2.Data
 {
-    public class Alloca8DbContext : IdentityDbContext<Users,IdentityRole<Guid>,Guid>
+    public class Alloca8DbContext : IdentityDbContext<Users, IdentityRole<Guid>, Guid>
     {
         public Alloca8DbContext(DbContextOptions options) : base(options)
         {
-            
+
         }
-      
+
         public DbSet<Rooms> Rooms { get; set; }
-        public DbSet<Bookings>Bookings { get; set; }
+        public DbSet<Bookings> Bookings { get; set; }
         public DbSet<Reviews> Reviews { get; set; }
         public DbSet<Payments> Payments { get; set; }
         public DbSet<HotelImages> HotelImages { get; set; }
@@ -22,10 +22,10 @@ namespace Alloca8._2.Data
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Hotels>()
-             .HasOne(h => h.HotelOwner)
-              .WithMany(u => u.Hotels)
-             .HasForeignKey(h => h.UserId) // Changed to UserId
-             .OnDelete(DeleteBehavior.Cascade);
+               .HasOne(h => h.HotelOwner)
+                .WithMany(u => u.Hotels)
+               .HasForeignKey(h => h.UserId) // Changed to UserId
+               .OnDelete(DeleteBehavior.Cascade);
 
 
             modelBuilder.Entity<HotelImages>()

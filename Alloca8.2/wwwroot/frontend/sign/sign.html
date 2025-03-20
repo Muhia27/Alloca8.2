@@ -34,16 +34,21 @@
             const userType = document.querySelector('input[name="userType"]:checked')?.value;
 
             if (userType) {
-                localStorage.setItem('selectedRole', userType); // Store the role
-
+                let roleValue = 0;
+                if (userType === 'customer') {
+                    roleValue = 1; // UserRole.customer
+                } else if (userType === 'hotelOwner') {
+                    roleValue = 2; // UserRole.HotelOwner
+                }
+                localStorage.setItem('selectedRoleValue', roleValue); // Store the INTEGER role value
                 // Use a timeout to ensure the storage is set before redirecting
                 setTimeout(() => {
                     if (userType === 'customer') {
-                        window.location.href = '../UserSide/SignUp.html';
+                        window.location.href = '../userSide/signup.html';
                     } else if (userType === 'hotelOwner') {
-                        window.location.href = '../AdminSide/Sign Up.html';
+                        window.location.href = '../adminside/signup.html';
                     }
-                }, 100); // Small delay to ensure storage works
+                }, 100);
             } else {
                 alert('Please select a user type');
             }
